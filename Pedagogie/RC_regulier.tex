@@ -1,0 +1,217 @@
+\documentclass[a4paper,12pt, french]{article}
+\usepackage[french]{babel}
+
+\PassOptionsToPackage{table}{xcolor}
+\usepackage{onedown}
+\setdefaults{colors=4A, bidlong=off, bidline =0}
+\usepackage{tcolorbox}
+\newcommand{\T}{\Cl}
+\newcommand{\K}{\Di}
+\newcommand{\C}{\He}
+\renewcommand{\P}{\Sp}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[Bjornstrup]{fncychap}
+
+\usepackage{fontspec}
+%\setmainfont{Universalis ADF Std}
+%\setmainfont{liberation Sans}
+\setmainfont{Caladea}
+\newfontfamily{\myfont}{Caladea}[Ligatures = TeX]%[NFSSFamily=cmss]
+\newfontfamily{\sansserif}{liberation Sans}[Ligatures = TeX]
+\bidderfont{\mdseries\myfont}
+\compassfont{\mdseries\sansserif}
+\gamefont{\bfseries\sansserif}
+\legendfont{\mdseries\sansserif}
+\namefont{\mdseries\sansserif}
+\otherfont{\bfseries\sansserif}
+
+
+\definecolor{ashgrey}{rgb}{0.7, 0.75, 0.71}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{bananamania}{rgb}{0.98, 0.91, 0.71}
+
+%\usepackage{fourier-otf}
+\newcommand{\titre}[1]
+{
+\newpage
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+
+\begin{center}
+\Large
+  \includegraphics[width=0.5cm]{trefle.png}
+  \hfill
+  #1
+  \hfill
+  \includegraphics[width=0.5cm]{trefle.png}
+\end{center}
+\end{tcolorbox}
+}
+
+\newcommand{\enchbox}[2]{
+\vspace{8pt}
+\tcbox[left=0mm,right=0mm,top=0mm,bottom=0mm,boxsep=0mm,
+toptitle=0.5mm,bottomtitle=0.5mm,title=#1]{%fond vert
+\arrayrulecolor{blue!5!black}\renewcommand{\arraystretch}{1.2}%
+\begin{tabular}{ccc}
+ #2
+\end{tabular}
+}
+\vspace{8pt}
+}
+
+\rowcolors{1}{bananamania}{white}
+\newcommand{\rb}{\rowcolor{bananamania} }
+\newcommand{\rw}{\rowcolor{white} }
+
+
+
+
+\makeatletter
+\renewcommand{\thesection}{\@arabic\c@section}
+\makeatother
+
+\begin{document}
+ 
+ \begin{center}
+ \LARGE{\bf La théorie du singleton en Trèfle Rouge}\\
+ \end{center}
+ 
+\section{Principes}
+
+En face d'un jeu régulier, on annonce son singleton au niveau de 3. La recherche d'un fit majeur est toujours prioritaire sur l'annonce du singleton.
+
+Avec un jeu régulier en face d'un jeu irrégulier ou potentiellement irrégulier. On utilise l'enchère de 2\NT pour demander le singleton du partenaire.
+
+\section{Utilisation du relai à 2\NT}
+
+Ce relai intervient lorsque le répondant à répondu 1\P avec 12H et un jeu régulier. 
+
+La séquence typique est 1\T-1\P-2\T. Dans cette séquence, s'il faut jouer à \NT, cela doit se faire de la main du répondant. Celui-ci peut proposer 3\NT avec 12-13H et des points à pique et à carreau. Sinon, il fait un relai à 2\NT pour connaître le singleton de l'ouvreur. Cela permet d'éviter de très mauvais 3\NT avec des mains moyennes ou au contraire de détecter des points perdus rendant le chelem injouable avec de belles mains.
+
+Comme la main de l'ouvreur n'est pas zonée et qu'en principe, c'est la main régulière qui doit se zoner en priorité, le relai à 2\NT est limité à 15H. 
+A partir de 16H, le répondant passera par une enchère, plus ou moins naturelle de 2\K ou encore moins naturelle de 2\P. Evidemment, il ne dira pas 2\C qui montrerait 4 cartes dans un jeu faible limité à 7DH (6H ou 7H vraiment laids). 
+
+Dans ma logique, j'imagine que 2\K serait plutôt 16-17 et 2\P plutôt 18+. De toute façon, d'une façon ou d'une autre, l'ouvreur montre son singleton.
+
+\section{Ouverture de 1\P}
+
+Dans les séquences 1\P--1\NT--2x--2\NT, l'ouvreur, avant de conclure à 3\NT, peut montrer son singleton au niveau de 3.
+
+\textit{Historiquement, dans ce genre de séquences, on a l'habitude de montrer le résidu plutôt que le singleton. Je pense qu'il est plus cohérent pour l'ensemble du système de décider que toute nouvelle couleur annoncées au niveau de 3 après que le partenaire ai montré un jeu régulier est un singleton. Dans la plupart des cas, cette façon de faire est équivalente, mais il existe quelques séquences, connues sous le nom de problème des carreaux, où l'annonce du singleton simplifie tout.}
+
+\section{Les séquences 1\T--1\P--1\NT et 1\K--1\P--1\NT}
+
+Cette enchère de 1\NT montre a priori un jeu régulier. Toutefois, avec une couleur cinquième laide ou un honneur sec, il est tout à fait possible que l'ouvreur ai enchéri de façon pragmatique. Il s'attend à un jeu vraiment faible en face.
+
+Du point de vue du répondant, avec une main faible et un jeu excentré, celui-ci ne souhaite pas jouer 1\NT et préfère jouer dans sa couleur. Aussi, toutes les redemandes au niveau de 2 montrent une misère et sont des conclusions.
+
+Avec un jeu fort, à partir de 12H, le répondant aura toujours un jeu régulier. 
+
+Avec 12-13H, il n'y a pas de chelem. Le répondant peut conclure à 3\NT. Toutefois, avec 3 cartes dans la majeure de l'ouvreur et un doubleton, il a la possibilité (et le devoir) de faire une enchère de politesse au niveau de 3. En effet, l'ouvreur n'a pas dénié 5 cartes et, surtout en tournoi par paires, il est vital de retrouver le fit 5-3 pour marquer 420 au lieu de 400.
+
+Typiquement 1\T--1\P--1\NT--3\C--4\C. On retrouve le contrat du champ.
+
+A partit de 14H, la possibilité d'un chelem au poids existe. En tournoi par paires, on va essayer de jouer 6SA. En IMP, il na faudra pas négliger la recherche d'un  fit 4-4 mineur qui perdra souvent 2 points mais en gagnera parfois 17.
+
+Pour connaître la force de l'ouvreur, le répondant fait une demande quantitative à 2\NT. Par manque de place, l'ouvreur annonce son jeu par paliers de 2 points. 3\T = 12-13H, 3\K = 14-15H, 3\C = 16-17H, 3\P = 18-19H.
+
+\section{La séquence 1\C--1\P--1\NT}
+
+Cette situation est très similaire à la précédente mais avec un décalage d'une zone (une zone = une levée = 3H). De 9 à 13H, le répondant va conclure à 3\NT.
+
+Il peut aussi faire un relai quantitatif à 2\NT. Il reste suffisamment d'espace pour annoncer la force du jeu au point près, de 3\T\ = 15H à 3\NT = 19H. 
+
+
+\section{L'ouverture de 1\NT}
+
+Face à une ouverture de 1\NT, il faut résoudre le problème des majeures et le problème des singletons.
+
+Beaucoup de singletons, mais pas tous, se résolvent par le biais d'un Texas ou par l'annonce de 2\NT bicolore mineur.
+
+Avec une majeure quatrième, une mineure au moins cinquième et un singleton, il faut commencer par un Puppet Stayman. Cela permet de récupérer un fit majeur 5-4 ou 5-3 dans le résidu. 
+
+Après le Stayman, la deuxième enchère du répondant va servir à annoncer le singleton.
+
+Dans la séquence la plus fréquente 1\NT--2\T--2\K, on annonce le singleton au niveau de 3 et le tour est joué.
+
+Les choses sont plus compliquée lorsque l'ouvreur annonce un majeure. Le soutien au niveau de 3 est une proposition de manche et l'enchère de 3\K est une proposition de chelem dans la majeure (convention 2025, Merci Marc pour ton merveilleux site, plus efficace que la convention 2012, notamment en cas de fit \C).
+On est donc obligé de dire 3\T avec un singleton \T ou \K. Cela ne pose un problème que de mémorisation. Sur un relai à 3\K, le répondant montre son singleton \T par l'enchère de 3\C et son singleton \K par l'enchère de 3\P.
+
+Le  problème des bicolores majeurs se résout comme dans le SEF. La réponse directe de 4\K indique en général un  5-5 majeur de manche (on peut faire suivre l'enchère d'un Blackwood brutal si on a une certitude de chelem). La séquence 1\NT--2\C--2\P--3\C est une enchère de chelem permettant de vérifier les contrôles. 
+Et la séquence 1\NT--2\K--2\C--2\P est une invitation à la manche. Attention à cette séquence, elle promet 5 cartes à \C mais pas 5 cartes à \P. L'ouvreur doit annoncer 2\NT mini ou maxi, fitté ou non, cf infra.
+
+Avec 5 cartes à pique, sans 5 cartes à \C, on passe toujours par un Stayman suivi d'une misère dorée à 2\P.
+
+Avec 5 cartes à cœur et un jeu limite de manche, il y a deux façon de procéder. Avec un jeu plus ou moins régulier ou court à pique, on passe par le Puppet Stayman.
+On dira 2\C sur la réponse de 2\K et 2\NT sur la réponse de 2\P. L'ouvreur devra penser à passer par 3\C avec 3 cartes avant de conclure à 3\NT s'il est maximum.
+Avec un jeu vraiment excentré, bicolore 5-5 par exemple. Cette façon de faire ne fonctionne pas. On utilise la séquence 1\NT--2\K--2\C--2\P. L'ouvreur redemande 2\NT et le répondant montre sa deuxième couleur. 3\T\ = 5 cartes à \T, 3\K\ = 5 cartes à \K, 3\C\ = 5 cartes à \P. L'ouvreur peut alors juger correctement sa main.
+
+\section{Les séquences faciles de \NT fort}
+
+Les séquences 1\T--1\K--1\NT et 1\K--1\C--1\NT sont assez faciles. Pas de chelem en vue sauf avec un singleton qui tombe extrêmement bien.
+En effet, l'ouvreur à une main de 15-17H et le répondant de 5-11H.
+
+La possibilité d'un fit majeur 5-3 existe. On donne la priorité aux enchères de politesse par rapport aux singleton. Donc les séquences 1\T--1\K--1\NT--3\C et
+1\K--1\C--1\NT--3\P annoncent 3 cartes (avec un doubleton) et demandent de choisir la meilleure manche. 
+
+Toute autre enchère au niveau de 3 est forcing de manche et montre un singleton dans une main de 10-11H. (Avec 9H et une main excentrée, 3\NT, ça passe ou ça casse, inutile de téléphoner l'entame).
+
+Avec 8H, on annonce 2 \NT.
+
+Dans la séquence 1\K--1\C--1\NT, le répondant peut avoir 5 (ou même 6-7) cartes à cœur. On a donc besoin d'un gadget. Je propose ici que l'enchère de 2\P annonce une main au moins limite de manche avec au moins 5 cartes à \C. (On peut aussi utiliser 2\T à cet effet si c'est plus facile à retenir)
+
+Les autres enchères au niveau de 2, donc 2\T et 2\K dans tous les cas, et 2\C après ouverture de 1\K sont naturelles faibles.
+
+Il est à noté que le enchères de 2\C et de 2\P après ouverture de 1\T n'ont pas vraiment de signification utile. On peut utiliser 2\C pour montrer 8H et 3 cartes si on n'a pas peur de confondre avec 2\P sur ouverture de 1\K. On peut utiliser 2\P pour montrer un 5-5 mineur avec la même réserve, enchère rare donc pas forcément facile à mémoriser, même si, a priori, c'est logique.
+
+ 
+\section{La séquence 1\T--1\C--1\NT}
+
+C'est aussi une séquence de \NT fort. Mais ici, le répondant n'a pas limité sa main. 
+
+On va utiliser la même logique que dans les deux séquences ci-dessus. Mais maintenant, les annonces de singleton seront plus fréquentes et les chelems plus plausibles.
+
+Avec 5 cartes à \P, on renouvelle le Texas. La rectification de l'ouvreur est obligatoire. Et une enchère subséquente au niveau de 3 sera toujours interprétée comme un singleton.
+
+\section{L'ouverture de 2SA}
+
+L'ouverture de 2\NT  montre 20-21H est la même dans tous les  systèmes. Donc continuez à jouer ce une vous aimez. 
+
+Le Stayman simple du SEF est facile et efficace.
+
+Le Puppet Stayman usuel ne fonctionne pas. Ou en tout cas moins bien que le Stayman simple pour une complexité plus élevée. Aucun intérêt.
+
+Sur le site de la majeure sécurisée, on trouve une version francisée du Romex italien. C'est un bon système. Complexité accrue mais efficacité accrue.
+
+Sur le site l'amour du bridge, on trouve le Muppet, une version du Puppet, mais qui fonctionne. Ce système, bien que complexe, a mérite d'être expliqué au travers de plusieurs heures de vidéos très pédagogiques.
+
+J'ai moins même développé un Advanced Stayman autour d'une idée américaine. J'ai écris un pdf explicatif. Très peu différent du Muppet au final et avec le même niveau de complexité. Les vidéos du Muppet sont très utiles pour apprendre l'Advanced Stayman. Il n'y a que deux différences fondamentales. La première, c'est que j'utilise le principe de Texas universel, c'est à dire que la première redemande du répondant est soit une conclusion soit un Texas. Il n'y a pas d'exception. A mo avis c'est plus simple. Par contre, la réponse de 3\K au Stayman utilise une mécanique un peu bizarre mais qui permet de retrouver tous les fits majeurs et non pas, presque tous, comme dans les autres systèmes. Maintenant, est-ce que le gain vaut le coup en mémorisation ?
+
+\section{Les redemandes à 2\NT}
+
+Dans les séquences 1\T--1\P--2\NT et 1\K--1\P--2\NT, l'ouvreur possède 22-23H et la distribution du répondant est inconnue. Pour retrouver les fits majeurs, le plus simple (et surtout le plus cohérent) consiste à jouer le check-back Stayman à 3\T. On utilise le système de réponse habituel. Par exemple, après 1\T--1\P--2\NT--3\T, cela donne 3\K\ = 5 cartes à \C et 3 cartes à \P, 3\C\ = 5 cartes à \C et 2 cartes à \P, 3\P = 4 cartes à \C et 3-4 cartes à \P et 3SA = 4 cartes à \C et 2 cartes à \P.
+
+Avec 4 cartes dans la majeure d'ouverture ou 5 cartes dans l'autre majeure, on peut conclure au niveau de 4. Comme on applique la logique du Texas universel en face des SA (pour éviter les oublis, il ne faut pas faire d'exception), cette conclusion se fait en Texas.
+
+Les trois enchères qui restent, 3\K, 3\C et 3\P servent à annoncer les singletons. Toujours pour respecter la cohérence du système. Annoncer le singleton dans la majeure de l'ouvreur, n'étant pas très utile, les séquences 1\T--1\P--2\NT--3\C et 1\K--1\P--2\NT--3\P  annoncent le singleton trèfle. Si le singleton ne va pas, on se débrouillera pour trouver un fit mineur.
+
+Dans la séquence 1\C-1\P-2\NT, l'ouvreur a toujours 22-23H mais le répondant n'aura jamais 5 cartes à pique. On garde a peu près le même système sauf que sur 3\T on annonce 3\C ou 3\NT, fin de l'histoire. D'autre part, il est impossible d'annoncer un singleton trèfle. Dont acte. Cela ne semble pas vraiment utile.
+
+Remarquons que muni de 12H ou plus, le répondant devrait pouvoir se débrouiller si par hasard il voulant jouer un autre contrat que 6SA.
+
+Passons aux séquences 1\T--1\K--2\NT, 1\T--1\C--2\NT et 1\K--1\C--2\NT. Ici l'ouvreur a montré 18-19H. On garde la, même logique que ci-dessus. Cependant, dans la séquence particulière 1\T--1\K--2\NT, le check-back à 3\T n'a aucune utilité vu qu'aucun fit majeur n'est possible. 
+
+\textit{On pourrait convenir que 1\T--1\K--2\NT--3\T montre un singleton \T et 1\T--1\K--2\NT--3\C montre un singleton \C. Il me semble toutefois que créer une exception ici est peu utile ete tellement rare que cela poserait de graves problèmes de mémorisation.}
+
+\section{La redemande à 1\P de l'ouvreur}
+
+Dans la séquence 1\T--1\K--1\P, le répondant n'a pas grand choix. A priori, l'ouvreur possède une main de 12-14H sans 5 cartes à \C. Il ne peut donc proposer la manche qu'avec 11H. 
+Dans ce cas, il fait une proposition à  2\NT. Sinon, dans la plupart des cas, il répond 1\NT. Mais avec un mineure sixième, il peut conclure à 2\T ou 2\K, contrats qui seront bien meilleurs que 1\NT. 
+
+Dans la séquence 1\K--1\C--1\P se pose en plus le problème des cœurs. Comme plus haut, avec 5 cartes à cœurs et 11H, on va utiliser l'enchère de 2\P. Il n'y a pas vraiment d'ambiguïté ici. Une enchère de préférence n'aurait pas vraiment de sens. Avec 5 cartes à pique et 12-14H, l'ouvreur aurait ouvert de 1\NT.
+
+Dans la séquence 1\T--1\C--1\P se pose le problème des piques résolu par la réitération du Texas.
+
+
+\end{document}
