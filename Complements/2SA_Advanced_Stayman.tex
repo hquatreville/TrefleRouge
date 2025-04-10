@@ -1,0 +1,528 @@
+\documentclass[a4paper,12pt]{article}
+
+
+\usepackage{a4,amsfonts,amsxtra,eucal}
+%\usepackage{ae,aeguill}
+\usepackage[french]{babel}
+%\usepackage{xspace}
+\usepackage{stmaryrd}
+%\unitlength=1sp
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage{colortbl}
+\usepackage{tablefootnote}
+\usepackage{hhline}
+
+\usepackage{xinttools}
+\usepackage{etoolbox}
+\usepackage{grbbridge1}
+
+
+\definecolor{ashgrey}{rgb}{0.7, 0.75, 0.71}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+
+\newcommand{\sequ}[2]{%
+\begin{tabular}[t]{lp{9cm}l}
+\fbox{\nsench{#1}} 
+&
+#2
+\end{tabular} }
+
+\newcommand{\msequ}[2]{%
+\begin{tabular}[t]{lp{9cm}l}
+\fbox{\bidpart{#1}} 
+&
+#2
+\end{tabular} }
+
+
+\begin{document}
+
+\begin{center}
+ \LARGE{\bf Ouverture de 2SA}
+\end{center}
+
+Je décris ici un système de réponse utile après une ouverture de 2SA, ou bien les séquences \t2-\k2-2SA, \k2-\co2-2SA ou \k2-\p2-2SA.
+
+La première séquence provient toujours d'un jeu semi-régulier. Sur ouverture de \t2, un singleton est possible et sur ouverture de \k2, l'ouvreur peut avoir une distribution exotique.
+
+
+\section{Description}
+
+\section*{A+ Stayman}
+
+Ouvrir de 2SA avec une majeure cinquième est une bonne idée. Pour retrouver les fits majeurs, on peut utiliser le Puppet Stayman qui a fait ses preuves sur l'ouverture de 1SA. Hélas, sur l'ouverture de 2SA, il ne fonctionne pas. En effet, la description des bicolores majeurs 5-4 de manche est acrobatique et celle des bicolores majeurs 5-4 de chelem y est totalement impossible.
+Sur l'ouverture de 1SA, on dispose de deux Staymans pour combler les trous dans la raquette du Puppet. Sur ouverture de 2SA, c'est impossible.
+
+
+Retrouver le fit majeur est surtout avantageux en tournoi par paire où la levée supplémentaire rapporte 20 points. L'inconvénient, c'est que la recherche de ce fit dévoile un peu de la distribution de l'ouvreur et facilite le flanc. je propose ici d'utiliser le Stayman A+ décrit par Glen Ahston, un mélange de Muppet et de Romex. Au prix d'une première réponse astucieuce, il a le double avantage d'avoir des développements un peu plus simples que le Muppet et dévoile un peu moins la main de l'ouvreur.
+
+\section*{Texas généralisé}
+
+Pour avoir un système cohérent, il faut convenir que, mis à part les enchères conclusives, toutes les enchères du répondant, au premier tour et au deuxième tour d'enchères sont des Texas. C'est important, dans le Muppet originel, il faut faire attention à l'enchère de \k4, Texas \C après la réponse de 3SA au Stayman indiquant 5 cartes à \C. Évitons les exceptions. L'enchère de \t4 sera toujours un Texas \K au premier et au deuxième tour d'enchère. 
+
+
+Ce principe de Texas généralisé est incompatible avec la convention 2012. Elle est remplacée par le Texas Idiot. Par exemple, si l'ouvreur annonce 4 cartes à \C dans la séquence 2SA-\t3-\co3, le répondant peut conclure à \co4, l'enchère de \k4 est un Texas Idiot indiquant une volonté de chelem. 
+
+Ainsi le Texas \T se fait à \P \dots\ sauf bien sûr lorsque l'atout est \P. Dans ce cas, \p4 est une conclusion naturelle, \co4 est un Texas Idiot, équivalent d'ailleurs à la convention 2012 et le Texas \T se fait donc économiquement à \k4. Il reste alors un peu d'espace pour certains contrôles ou le Blackwood.
+
+Dans la séquence 2SA-\t3-3SA, l'ouvreur possède 5 cartes à \C. Le répondant, s'il est fitté dispose du Texas à \k4 pour indiquer le fit. Il peut ensuite passer, ou bien prospecter pour le chelem par un Blackwood ou par l'enchère de \p4 si le Blackwood n'est pas adapté à la situation. Par souci de cohérence, le Texas trèfle reste à \p4 et l'enchère de \co4 n’existe pas. Ainsi, en cas d'oubli, il n'y a pas de casse.
+
+Comme les Texas mineurs ne s'utilisent qu'en recherche de chelem, utiliser l'enchère de \p4 comme texas \T n'est pas un problème.
+
+Un avantage de cette façon de faire, c'est que le contrat sera bien plus souvent joué de la bonne main. 
+
+\section*{Rectification fittée}
+
+D'un point de vue théorique, avec les \C, la rectification non fittée fonctionne mieux que la rectification fittée, mais avec les \P, c'est le contraire. On ne va pas saturer la mémoire avec un système hybride et donc, comme tout le monde, on va jouer la rectification fittée. Sur une réponse non fittée, les enchères de \k4 et \co4 étant des Texas, c'est l'ouvreur qui va jouer.
+
+Quand un fit majeur 5-3 est trouvé, il reste de la place pour rechercher un fit mineur 4-4; Cela permet, d'une part de mieux juger sa main pour aller ou ne pas aller au chelem, d'autre part, d'améliorer le chelem. (Même par paires)
+
+
+\section*{Blackwood imaginaire}
+
+Par manque de place, il arrive qu'on ne puisse pas fixer l'atout avant le palier de 4SA. De la part de l'ouvreur, 4SA est pratiquement toujours un coup de frein.
+De la part du répondant, 4SA est le plus souvent quantitatif.
+
+Plutôt que d'annoncer un contrôle au niveau de 5, c'est un peu tard. Il est plus urgent d'annoncer les As. On considère donc que les enchères de \t5 à \p5 agréent la dernière couleur annoncée et répondent au Blackwood posé dans cette couleur.
+
+
+\subsection*{Unicolores majeurs sixième}
+
+Les unicolores sixièmes de manche utilise le deuxième texas au niveau de 4 de même que les unicolores sixièmes avec quasi-certitude de chelem où on impose la couleur avant un Blackwood. Avec des ambitions de chelem, on commence par un simple texas au niveau de 3.
+
+Avec un unicolore sixième et un espoir de chelem, on commence par un Texas et sur une réponse non fittée, on réitère le Texas. L'ouvreur ne doit pas rectifier sans réfléchir. Il peut annoncer le chelem, annoncer un contrôle ou poser le Blackwood, vu que l'atout est fixé.
+
+Mnémotechniquement, lorsque deux séquences décrivent la même distribution, la séquence rapide est toujours plus faible que la séquence lente.
+
+
+\subsection*{Unicolores majeurs cinquième}
+Avec 5 cartes à \C, on fait un Texas. Avec 3 cartes à \P, on risque de rater un fit 5-3, mais les autres ne feront pas mieux. (Il existe une solution pour parer à ce problème mais qui dévoile trop informations aux adversaires avec des mains banales.)
+Par contre, avec 5 cartes à \P et 3 cartes à \C, il faut passer par un Stayman, qui avec le chassé-croisé, permet de récupérer les \P.
+
+
+\subsection*{Unicolores mineurs}
+
+Avec un unicolore mineur, on conclue à 3SA, même avec un singleton, faute de place. Sur les Texas, l'ouvreur est sommé d'aller au chelem avec un beau fit.
+
+\subsection*{Bicolores majeurs}
+
+Avec un bicolore 5-5 de manche, on commence par un Texas à \co3, et on continue par l'enchère de \co4. L'ouvreur peut alors choisir. Avec une main de chelem, le répondant commence par un Stayman.
+
+Avec 5 cartes à pique et 4 cartes à cœur, on commence par un Stayman. Par contre, avec 5 cartes à cœur et 4 cartes à pique, on commence par un Texas à \k3 et il reste assez de place pour récupérer les pique. 
+
+\subsection*{Bicolores mineurs}
+
+Les bicolores mineurs de manche ou de chelem au moins 5-4 utilisent la réponse de \p3. On peut aussi conclure pragmatiquement à 3SA avec des Dames et des Valets.
+
+\subsection*{Bicolores croisés}
+
+On recherche d'abord un fit majeur. L'annonce subséquente d'une mineure n'est possible qu'avec une main de chelem. L'ouvreur peut toujours freiner à 4SA.
+
+
+
+\subsection*{L'enchère de 5SA}
+
+Ce n'est pas un quantitatif de grand chelem mais la recherche d'un meilleur chelem que 6SA. En tournoi par paire, a priori et en fonction du niveau du champ, on n'utilise pas ce gadget et on annonce 6SA pour éviter de prendre une bulle à \t6 ou \k6.
+
+\subsection*{Les enchères de contrôle}
+
+Dans la plupart des séquences de chelem, il n'y a plus de place pour les contrôles et pas toujours pour le Blackwood. Le répondant annonce son jeu et fait appel au jugement de l'ouvreur qui voit si ses honneurs sont utiles ou pas. On ira rarement au grand chelem, sachant que demander le petit à bon escient est souvent un exploit. Pour que cela fonctionne, il est vital que le répondant ne montre pas des ambitions de chelem tirées par les cheveux. Il n'y a pas de filet de sécurité.
+
+
+\subsection*{Capitanat}
+
+L'ouvreur de 2SA est toujours le Moussaillon. En principe, c'est le Capitaine qui pose le Blackwwod ou le Turbo. Faute de place, l'ouvreur de 2SA est souvent amené à faire un Blackwood, un Turbo, ou pire, à entendre les réponses à un Blackwood imaginaire. S'il ne manque ni contrôle, ni As, l'ouvreur annonce 5SA. Quand le Mousssaillon dit 5SA, ce n'est jamais un Blackwood au Roi, c'est le capitaine qui décide de conclure au petit ou au grand chelem. 
+
+\section*{Réponses à l'ouverture}
+
+\begin{tabular}{ll}
+ \t3 & Au moins une majeure troisième\\
+ \k3 & Au moins 5 cartes à \C\\
+ \co3 & Au moins 5 cartes à \P\\
+ \p3  & Bicolore mineur     \\
+ 3SA  & Pour les jouer sans rien dévoiler\\
+ \t4 & Texas \K, ambition de chelem\\
+ \k4 \co4 & Texas sans ambition ou prélude au Blackwood\\
+ \p4 & Texas \T, ambition de chelem\\
+ 4SA & Quantitatif\\
+ \t5,\k5 & Naturel, faible, avec une poubelle huitième\\ 
+ \p5 & Quantitatif de grand chelem (n'arrive jamais)\\
+ 5SA & Choix du meilleur chelem\\
+ 6SA & Conclusion \\
+\end{tabular}
+
+\section*{Réponses au Stayman}
+
+Dans le Muppet original, la réponse de \k3 promet une majeure quatrième et, par inférence, le flanc peut deviner laquelle. Ici, l'ouvreur ne dévoile sa main que lorsque'il a 4 cartes à \C sans 4 cartes à \P, deux fois moins souvent. De plus, la réponse de \k3 permet de faire un chassé-croisé sans acrobatie.
+
+\subsection*{2SA - \t3}
+
+
+
+\begin{tabular}{ll}
+ \k3  & Pas de majeure par 5 \\
+ \co3 & 4 cartes à \C, pas 4 cartes à \P\\
+ \p3  & 5 cartes à \P\\
+ 3SA & 5 cartes à \C\\
+\end{tabular}
+
+\subsection*{2SA - \t3 - \k3}
+La main de l'ouvreur est nébuleuse. On sait ce qu'il n'a pas  mais pas ce qu'il a\ ! Il peut ne pas avoir de majeure quatrième, avoir les \P sans les \C ou avoir les deux majeures. Qu'importe ! Le répondant répond \co3 si ce sont les \P qui l'intéresse et \p3 si ce sont les \C.
+Attention toutefois, ces enchères ne promettent que 4 cartes et pas 5 comme dans le cas d'un chassé-croisé classique. Sur \co3, on peut récupérer les fit 5-3 à \P mais sur \p3, on ne peut pas récupérer les fit 5-3 à \C. Il faut toujours faire un Texas avec 5 cartes à \C.
+
+La gestion des gros bicolores majeurs nécessite un peu de mémorisation.
+
+Attention, dans toutes ces séquences, l'ouvreur ne rectifie un Texas majeur qu'avec une mauvaise main. Avec une bonne main il répond au Texas imaginaire dans la dernière couleur nommée, celle du fit. Après l'annonce d'un bicolore majeur 5-5, 4SA indique un misfit dans les deux couleurs.
+
+Avec les mineures, c'est le contraire, l'enchère de 4SA est un coup de frein et le fit est positif.
+
+\begin{tabular}{|l|l|}
+\hline
+&2SA - \t3 - \k3\\
+\hline
+\co3 & Au moins 4 cartes à \P\\
+& -> \p3 3 cartes à \P\\
+& -> 3SA 2 cartes à \P \\
+& -> \t4,\k4 4 cartes à \P, contrôle (\co4 est alors un Texas \P) \\
+& -> \p4, 4 cartes à \P, mauvaise main \\
+\hline
+\p3  & 4 cartes à \C sans 4 cartes à \P \\
+& -> 3SA Pas 4 cartes à \C\\
+& -> \t4 4 cartes à \C belle main (\k4 est alors un Texas \C)\\
+& -> \co4 4 cartes à \C mauvaise main\\
+\hline
+3SA & Conclusion \\
+\t4 & Au moins 5 cartes à \K, espoir de chelem\\
+\k4 & 6 cartes à \C et 4 cartes à \P, zone de manche ou prélude au Blackwood\\
+\co4& 6 cartes à \P et 4 cartes à \C, zone de manche, ou prélude au Blackwood\\
+\p4 & Au moins 5 cartes à \T, espoir de chelem\\
+4SA & Quantitatif\\
+5SA & Choix de petit chelem \\
+\hline
+\end{tabular}
+
+\subsection*{2SA - \t3 - \k3 - \co3 - 3SA}
+Dans cette séquence, le répondant recherche un fit 4-4 ou 5-3 à \P. L'ouvreur n'y possède que 2 cartes.
+Par inférence, on sait qu'il n'a pas non plus 4 cartes à \C.
+Presque toujours, on en restera là. Si le répondant reparle, il a nécessairement un espoir de chelem. En effet, l'annonce d'une mineure au niveau de 4 indique toujours un espoir de chelem. Et l'annonce d'une majeure, en Texas, montre nécessairement une distribution qui aurait pu être annoncée plus rapidement.
+Si l'ouvreur est horrifié, il freine à 4SA.
+
+\begin{tabular}{ll}
+  \t4 & Au moins 5 cartes à \K, espoir de chelem\\
+ & -> \k4 TURBO\\
+ \k4 & Bicolore majeur 5-5, espoir de chelem\\
+ \co4 & Texas avec 6 cartes à \P, 4 cartes à \C et des ambitions\\ 
+ \p4 & Au moins 5 cartes à \T, espoir de chelem\\ 
+\end{tabular}
+
+\subsection*{2SA - \t3 - \k3 - \p3 - 3SA}
+Sans cette séquence, proche de la précédente, le répondant recherche un fit 4-4 à \C et a échoué.
+De la même façon, il ne reparle qu'avec une main de chelem, et en Texas.
+Il est a noté qu'il est impossible de retrouver le fit 5-3 à \C. Avec 5 cartes à \C, il faut commencer par un Stayman.
+
+\begin{tabular}{ll}
+  \t4 & Au moins 5 cartes à \K, espoir de chelem\\
+ & -> \k4 TURBO\\
+ \k4 & Au moins 6 cartes à \C, espoir de chelem\\
+ \co4 & N'existe pas (6-5?)\\ 
+ \p4 &  Au moins 5 cartes à \T, espoir de chelem\\
+
+\end{tabular}
+
+
+\subsection*{2SA - \t3 - \k3 - \co3 - \p3}
+Dans cette séquence, le répondant recherche un fit 4-4 ou 5-3 à \P. L'ouvreur y possède 3 cartes. Si le répondant possède 5 cartes, le fit est trouvé mais s'il ne possède que 4 cartes, il n'y a pas de fit. Pour indiquer qu'il est fitté, le plus souvent, le répondant conclue à \p4 mais il peut aussi proposer (ou imposer) le chelem par un Texas Idiot à \co4. L'ouvreur ne doit pas hésiter à dépasse le palier de  \p4 s'il est enthousiaste. L'enchère de \p4 sera interprétée comme un coup de frein. Maintenant, le répondant peut continuer les enchères.
+
+Toutes les autres sont misfit et Texas. Le Texas \T se fait économiquement à \k4.
+
+Il est à noté que les réponses sont les mêmes que si le déclarant avait répondu immédiatement \p3 sur le Stayman. Dans les deux cas, on a trouvé un fit 5-3, ou pas.
+
+\begin{tabular}{ll}
+ 3SA & Conclusion\\
+  \t4 & Au moins 5 cartes à \K, espoir de chelem\\
+ \k4 &  Au moins 5 cartes à \T, espoir de chelem\\
+  \co4 &Texas idiot, espoir de chelem\\
+  \p4 & Conclusion\\
+\end{tabular}
+
+
+
+
+\subsection*{2SA - \t3 - \co3}
+L'ouvreur possède exactement 4 cartes à \C, la suite est simple. On dispose même d'un Texas \T économique.
+
+\begin{tabular}{|l|l|}
+\hline
+& {2SA - \t3 - \co3}\\
+\hline
+ \p3 & Au moins 5 cartes à \T, espoir de chelem\\
+  & -> 3SA Coup de frein\\
+   & -> \t4 TURBO\\
+ 3SA & Mauvaise pioche\\
+ \t4 & Au moins 5 cartes à \K, espoir de chelem\\
+ & -> \k4 TURBO\\
+ & -> 4SA Coup de frein\\
+ \k4 & Texas Idiot, espoir de chelem\\
+ \co4 & Conclusion\\
+ 4SA & Quantitatif \\
+ \hline
+\end{tabular}
+
+\subsection*{2SA - \t3 - \p3}
+
+L'ouvreur possède 5 cartes à \P, la suite est simple.
+
+\begin{tabular}{ll}
+ 3SA & Fin\\
+  \t4 & Au moins 5 cartes à \K, espoir de chelem\\
+ & -> \k4 TURBO\\
+ \k4 & Au moins 5 cartes à \T, espoir de chelem\\
+ & -> 4SA Coup de frein\\
+ \co4 & Texas Idiot = Convention 2012\\
+ \p4 & Fin\\
+ 4SA & Quantitatif\\
+\end{tabular}
+
+
+\subsection*{2SA - \t3 - 3SA}
+
+
+
+\begin{tabular}{ll}
+  \t4 & Au moins 5 cartes à \K, espoir de chelem\\
+ & -> \k4 TURBO\\
+ \k4 & Texas \C \\
+ \co4 & N'existe pas (veut jouer le coup !)\\
+ \p4 & Texas \T\\
+ & -> 4SA coup de frein\\
+ 
+\end{tabular}
+
+\section*{La réponse de \k3, texas \C}
+
+En cas de misfit \C, on peut retrouver le fit 4-4 à pique. Cependant, la séquence est très difficile !
+Si le répondant veut jouer un chelem à pique, aucune enchère n'est disponible avant le palier de \t5.
+On peut jouer les contrôles au niveau de 5. Le Blackwood imaginaire est plus utile, les accidents d'As sont plus graves et plus fréquents que les accidents de contrôles; Dans ce dernier cas, rien ne dit que les adversaires trouveront l'entame.
+
+Par ailleurs, on pourrai convenir, pour gagner de la place, que dans la séquence 2SA-\k3-3SA, l'enchère de \co4 est est Texas \T, mais c'est à mon avis une mauvaise idée, le risque d'oubli est considérable alors que l'enchère habituelle de \p4, Texas \T est confortable.
+
+Une autre difficulté de la séquence est le texas \T qui se fait à \co4, seule enchère disponible.
+
+Il est amusant de constater que si on joue la rectification non fittée, on dispose de développements plus simples.
+
+\vspace{5pt}
+\begin{tabular}{|l|l|}
+\hline
+& 2SA -\k3 \\
+\hline
+ \co3 & 3+ cartes à \C\\
+ \p3  & 2 cartes à \C, 4+ cartes à \P\\
+ 3SA & 2 cartes à \C\\
+ \co4 & 4+ cartes à \C, belle main\\
+ \hline
+\end{tabular}
+
+ \subsection*{2SA - \k3- \co3}  
+
+   \begin{tabular}{ll}
+   \p3 & 4+ cartes à \T, recherche d'un double fit \\
+    3SA & Pour les jouer en face d'un 4333\\
+    \t4 & 4+ cartes à \K, recherche d'un double fit \\
+    \k4 & Texas Idiot, espoir de chelem\\
+    \co4 & Conclusion \\
+   \end{tabular}
+  \subsection*{2SA - \k3- \p3}  
+  
+
+   \begin{tabular}{ll}
+   3SA & Conclusion \\
+   \t4 & Au moins 4 cartes à \K, ambitions\\
+   \k4 & 6 cartes à \C, ambitions \\
+   \co4 & Au moins 4 cartes à \T, ambitions\\
+   \p4 & Conclusion \\
+   4SA & Quantitatif \\
+   \t5,\k5,\co5,\p5 & Main de chelem, réponse au Blackwood imaginaire à \P\\
+   \end{tabular}  
+   
+   \subsection*{2SA - \k3- 3SA}  
+
+   \begin{tabular}{ll}
+
+   \t4 & Au moins 4 cartes à \K, ambitions\\
+   \k4 & 6 cartes à \C, ambitions \\
+   \co4 & N'existe pas \\
+   \p4 & Au moins 5 cartes à \T, ambitions\\
+   4SA & Quantitatif \\
+   \end{tabular} 
+   
+
+\section*{La réponse de \co3, texas \P}   
+
+Il y a une séquence dangereuse avec risque de confusion. En cas de misfit, l'enchère de \p4 n'est pas une conclusion. Ca n'aurait aucun sens. Avec un unicolore de manche, le répondant aurait annoncé \co4 et pas \co3. S'il a 6 cartes à \P, il va donc obligatoirement refaire un Texas, pas si idiot puisque l'ouvreur n'a pas encore nommé les \P. 
+
+\subsection*{2SA - \co3}
+
+\begin{tabular}{ll}
+ \p3  & 3+ cartes à \P\\
+ 3SA & 2 cartes à \P\\
+ \p4 & 4+ cartes à \P, belle main\\
+\end{tabular}
+
+\subsection*{2SA -\co3-\p3}
+
+\begin{tabular}{ll}
+ 3SA & Proposition pour ouvreur 4333\\
+ \t4 & Au moins 4 cartes à \K, ambitions\\
+ \k4 & Au moins 4 cartes à \T, ambitions\\
+ \co4 &  Texas Idiot, espoir de chelem\\
+ \p4 & Conclusion\\
+\end{tabular}
+
+\subsection*{2SA-\co3-3SA}
+\begin{tabular}{ll}
+ \t4 & Au moins 4 cartes à \K, recherche de double fit\\
+ \k4 & Bicolore majeur 5-5 de manche\\
+ \co4 &  6 cartes à \P, ambitions\\
+ \p4 & Au moins 5 cartes à \T, espoir de chelem\\
+4SA & Blackwood \\
+\end{tabular}
+
+
+
+
+\section*{La réponse  de \p3}
+
+Provient d'un bicolore mineur au moins de manche. Au cas de doute, l'ouvreur doit préférer le contrat de 3SA qui est celui du champ.
+Le répondant reparlera de toute façon s'il recherche un chelem.
+
+Dans ces séquence, on est amené à demander le chelem au poids sans avoir de place pour le Blackwood. 
+
+\subsection*{2SA - \p3}
+
+\begin{tabular}{ll}
+ 3SA & Trop de points en majeur\\
+ \t4 & au moins 4 cartes à \T fixe l'atout TURBO DIRECT\\
+ \k4 & au moins 4 cartes à \K fixe l'atout TURBO DIRECT\\
+
+\end{tabular}
+
+\subsection*{2SA - \p3 - 3SA}
+\begin{tabular}{ll}
+ \t4 & 5+ cartes à \K \\
+ & -> \k4 TURBO\\
+ & -> \co4, \p4 : 5 cartes \\
+ & -> 4SA Coup de frein\\
+ \k4 & 5+ cartes à \T \\
+& -> \co4, \p4 : 5 cartes \\
+ & -> 4SA Coup de frein\\
+ \co4 & 5-5 singleton \C\\
+ & -> 4SA Coup de frein\\
+ & -> \t5,\k5 Beau fit mais points perdus dans le singleton\\
+ & -> \t6,\k6 Beau fit sans points perdus\\
+ \p4 & 5-5 singleton \P\\
+ 4SA & quantitatif\\
+\end{tabular}
+
+Dans tous les cas 4SA est un coup de frein.
+
+\section*{La réponse  de \t4}
+
+C'est un Texas \K avec volonté de chelem. La rectification est quasiment obligatoire. 
+L'ouvreur peut déroger avec un jeu exceptionnel uniquement. Dans ce cas, on considère qu'il répond à un TURBO imaginaire.
+
+Sur la rectification, le répondant nomme un singleton ou une enchère quantitative (ou un Blackwood d'exclusion pour le grand chelem). L'ouvreur juge sa main et conclue ou répond à la question.
+
+
+\section*{Les Texas majeurs au niveau de 4}
+
+Rectification obligatoire.
+
+\section*{La réponse de \p4}
+
+C'est un Texas \T avec une volonté de chelem. 
+\subsection*{2SA - \p4} 
+\begin{tabular}{ll}
+ 4SA & Coup de frein\\
+ \t5 & Fit sans conviction\\
+ \k5 & Chaud bouillant 3 clefs\\
+ \co5 & Chaud bouillant 4 clefs\\
+\end{tabular}
+
+
+
+
+\section*{Exemples}
+
+
+
+\begin{tabular}{|ll|l|}
+\hline
+\vhand{RV943,AD5,A4,AD2} & \vhand{D72,RV87,83,V653} & \enchere{2SA, \t3, \p3,\p4} \\
+\hline
+\vhand{ARDV,A1064,A8,R107} & \vhand{873,92,V93,AV864}& \enchere{2SA,\t3,\k3,3SA}\\
+\hline
+\vhand{AD76,R87,R98,ARD} & \vhand{854,DV10654,AD5,7}& \enchere{2SA,\k3,\p3,\k4,\co4,4SA,3 As,\co6}\\
+\hline
+\vhand{ARD,V982,RV65,AR} & \vhand{V2,74,D982,D10964} & \enchere{2SA,3p,3SA}\\
+\hline
+\end{tabular}
+
+
+\begin{tabular}{|ll|l|}
+ \hline
+ \vhand{A72,AV97,AD10,RD3} & \vhand{RDV6,108632,V,A107} & \enchere{2SA,3t,3c,3p,4t,4k,4c,4s,3 As, 6c}\\
+ \hline
+ \vhand{AV74,AD,ARV9,D94}&\vhand{R53,R732,107,AV107}&\enchere{2SA,3t,3k,3s}\\
+ \hline
+ \vhand{ARD8,R9,A63,A975}&\vhand{9654,109743,4,632}&\enchere{2SA,3k,3c} ou \enchere{2s}\\
+ \hline
+ \vhand{RD5,RDV8,1075,ARD}& \vhand{V73,4,D6,V1076432} & \enchere{2s,5t}\\
+ \hline
+ \vhand{ARV2,A8,A42,A1086}& \vhand{D10843,DV,DV1083,3} & \enchere{2s,3c,4p,4s,5p,6p}\\
+  \hline
+ \vhand{RV8,AD6,AV76,AV3}&\vhand{D874,RV98,75,842}&\enchere{2s,3t,3k,3c,3p,3s}\\
+ \hline
+ \vhand{R8,AR1098,A76 ,AD7}&\vhand{D842,DV4,85,9843}& \enchere{2s,3t,3s,4k,4c}\\
+ \hline
+ \vhand{R8,AR1098,A76 ,AD7}&\vhand{A842,7,RD874,R98}& \enchere{2s,3t,3s,4t,4k,4p{ (3 clefs \& contrôle \P)},6k}\\
+  \hline
+  \vhand{R8,AR1098,AD6 ,A75}&\vhand{A842,7,R98,RD864}& \enchere{2s,3t,3s,4p,4k,4p,5k,6t}\\
+  \hline
+  \vhand{RV5,AV8,RD42,AD5} & \vhand{D4,R6532,V105,V76}& \enchere{2s,3k,3c,3s}\\
+  \hline
+
+\end{tabular}
+
+\begin{tabular}{|ll|l|}
+   \hline
+  \vhand{ADV,A7,R652,AD94} & \vhand{10,R7532,AV93,R72} & \enchere{2s,3k,3c,4t,4k,4c,5s,6k}\\
+  \hline
+  \vhand{A6,A83,AV92,AR87} & \vhand{RV7432,4,R85,D43} & \enchere{2s,3c,3s,4c,6p}\\
+  \hline
+  \vhand{98,RD6,ADV2,ARV8} & \vhand{RV7432,4,R85,D43} & \enchere{2s,3c,3s,4c,4p}\\
+  \hline
+  \vhand{RD6,AV5,R73,ADV2}&\vhand{5,R9764,AV86,R76}&\enchere{2s,3k,3c,4t,4c}\\
+    \hline
+  \vhand{RD6,AV5,AV75,RD3}&\vhand{5,R9764,R86,AV72}&\enchere{2s,3k,3c,3p,4s,5c,6c}\\
+    \hline
+\end{tabular}
+
+\section{Annexe : rectification non fittée sur \k3}
+
+L'ouvreur dispose de deux réponses : \co3, non fittée et \p3, fittée.
+
+Si l'ouvreur est fitté, le répondant peut proposer 3SA, renouveller le Texas pour faire jouer l'ouvreur ou proposer le chelem par l'enchère de \t4. C'est un peu moins raffiné (on ne peut pas annoncer de mineure quatrième).
+
+Sur la réponse de \co3, non fittée, le repondant peut annoncer 6 cartes en disant \co4, ce qui est une petite proposition de chelem. Il peut annoncer 4 cartes à \P par l'enchère de 3SA avec une main de manche ou de \t4 ou \k4 avec une main de chelem.
+L'enchère de \p3 est un transfert pour 3SA. Le repondant après ce transfert peut reparler pour nommer ses mineures, \t4 pour les \K et \k4 pour les \T.
+
+C'est moins sophistiqué que la version fittée mais cela reste une option si l'autre méthode s'avère difficile d'emploi. 
+
+
+
+
+\end{document}
+
+
+

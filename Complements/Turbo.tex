@@ -1,0 +1,210 @@
+\documentclass[a4paper,12pt]{article}
+
+
+\usepackage{a4,amsfonts,amsxtra,eucal}
+\usepackage{ae,aeguill}
+\usepackage[french]{babel}
+%\usepackage{xspace}
+\usepackage{stmaryrd}
+%\unitlength=1sp
+\usepackage[utf8]{inputenc}
+\usepackage{fourier}
+\usepackage{colortbl}
+\usepackage{hhline}
+\usepackage{xinttools}
+\usepackage{etoolbox}
+\usepackage{grbbridge1}
+
+\definecolor{ashgrey}{rgb}{0.7, 0.75, 0.71}
+\definecolor{apricot}{rgb}{0.98, 0.81, 0.69}
+\definecolor{bananamania}{rgb}{0.98, 0.91, 0.71}
+
+\newcommand{\sequ}[2]{%
+\begin{tabular}[t]{lp{9cm}l}
+\fbox{\nsench{#1}} 
+&
+#2
+\end{tabular} }
+
+\newcommand{\msequ}[2]{%
+\begin{tabular}[t]{lp{9cm}l}
+\fbox{\bidpart{#1}} 
+&
+#2
+\end{tabular} }
+
+
+\begin{document}
+
+\begin{center}
+ \LARGE{\bf Turbos}
+\end{center}
+
+
+
+\section*{Blackwood et chelems mineurs}
+Quand on veut jouer un chelem en mineur, on se retrouve souvent coincé.
+En effet, poser le Blackwood fait courir le risque de dépasse le pallier de la manche. Jouer le Blackwood 41-30 ne change rien à l'affaire, il empire même la situation lorsque l'atout est \T.
+Lorsque l'atout est \K, poser le Blackwood est plus facile mais le contrôle \T est alors très difficile à annoncer.
+
+Beaucoup de joueurs se sont penchés sur ce problème et beaucoup de solutions existent. Notamment la convention Gerber (Blackwood à \t4, très jouée aux états-unis)
+ainsi que le Kickback Blackwood (Le Blackwood se fait à \k4 à l'atout \T, \co4 à l'atout \K et \p4 à l'atout \C). Ces différents types de Blackwood ont tous l'inconvénient de polluer l'espace réservé aux enchères de contrôle. Très peu de joueurs français ont adopté ces conventions.
+
+Pourtant, une solution existe, elle a été inventé par les italiens de la Blue Team il y a bien longtemps. L'idée consise à annoncer les contrôles et simmultanément le nombre d'As. L'idée historique des italiens consistait, pendant la phase de contrôle, à annoncer 4SA avec un nombre pair d'As et à sauter le pallier de 4SA avec un nombre impairs d'As. Le système italien de l'époque était suffisamment bien zôné pour permettre au Turbo de fonctionner. Par contre, il ne s'est pas exporté, car il mène systématiquement à un pataques dès qu'une main est mal zônée.
+
+Depuis, le Bridge a fait des progrès et la version du Turbo que je présente ici (basée en effet sur la parité du nombre d'As) est bien plus simple que le système italien de l'époque. Je l'ai testé avec mon partenaire et on s'est aperçu qu'au bout d'une demi-douzaine de donnes on en maîtrisait déjà les principes car il roule comme une machine bien huilée et il est très facile à mémoriser.
+
+\section*{Déclic Turbo}
+Le Turbo n'est utilisé que pour la recherche des chelems à \T ou à \K. L'enchère déclic est l'enchère au niveau de 4 dans une mineure fittée. Donc c'est \t4 lorsque l'atout est \T et \k4 lorsque l'atout est \K.
+
+Le Turbo annule et remplace le Blackwood en mineure.
+
+Les conditions du Turbo nécessite qu'un fit mineur ait été trouvé. Ce fit peut avoir été exprimé au niveau de 3 ou au niveau de 2 (si on joue les SMI) mais l'enchère de \t4 ou \k4 peut dans certaines séquence établir le fit au niveau de 4. C'est alors un Turbo.
+
+Par contre, après une ouverture de 1SA ou 2SA, il est fréquent de proposer une mineure ou niveau de 4 sans fit (ou avec un fit potentiellement 6-2). Il n'y a alors pas de Turbo et l'enchère de 4SA est misfit et indique la volonté de jouer ce contrat. En cas de fit enthousiaste, on revient à la méthode classique contrôles+Blackwood.
+
+
+
+
+\section*{Difficultés techniques}
+Il faut tester te Turbo sur quelques donnes de chelem pour bien comprendre que celui qui déclenche le Turbo se retrouve propulsé capitaine de l'équipe. Il est donc
+important que le joueur qui lance le turbo soit celui qui a le plus d'informations utiles.
+
+Pour se lancer le Turbo, il est nécessaire de posséder au moins deux clefs. De plus, avec seulement deux clefs, il est préférable de posséder deux contrôles ou un contrôle et la Dame d'atout car si on lance le Turbo sans assez de contrôles, on ne pourra pas interroger la Dame d'atout.
+Il est possible de déroger à cette obligation lorsque le partenaire a fait une enchère très forte (ouverture de \t2 par exemple) si le manque d'espace ne permet pas une autre approche. Dans la mesure du possible il est préférable que ce soit le jeu le plus fort qui prenne l'initiative car il sera capitaine. 
+
+Je tiens à signaler la signification particulière de l'enchère de 4SA, elle signifie en priorité le contrôle des \K lorsque l'atout est \T ou \C lorsque l'atout est \K. Lorsqu'il ne reste plus q'un contrôle à tester, l'enchère de 4SA à l'atout \T et l'enchère de \t5 à l'atout carreau ont comme utilité secondaire de rechercher la Dame d'atout.
+
+Le Turbo est un Blackwood cinq As, le Roi d'atout comptant comme un As.
+
+Le but du Turbo est d'annoncer en même temps le nombre d'As et les contrôles. C'est possible ! Sans As, on décourage, avec deux As, on encourage en utilisant le premier pallier disponible et avec un As, on annonce les contrôle. L'enchère de 4SA est utilisé pour le contrôle qui n'est plus disponible. Avec trois ou quatre As, on enchérit
+comme si on avait deux As de moins et ensuite on impose le petit chelem ou on fait une tentative de grand chelem.
+
+
+
+Pour que le système fonctionne, il faut conclure au chelem dès qu'on a les informations désirées. Continuer à enchérir signifie qu'on est à la recherche d'un contrôle ou de la Dame d'atout pour le peit chelem. Les enchères anormales sont des recherches de grand chelem.
+
+Les tableaux ci-dessous résument la totalité des séquences issues du Turbo.
+
+
+
+
+\section*{Atout Trèfle}
+
+\begin{tabular}{|l|l|>{$\Rightarrow$ }clc<{:}l|}
+ \hhline{--~}
+ \rowcolor{ashgrey}  \makebox[1.2cm][l]{}  & \makebox[1.2cm][l]{\t4}  \\
+ \hhline{------}
+ \rowcolor{bananamania}  \k4 & \multicolumn{5}{l|} {Deux clefs (parfois 4)} \\
+ \hline
+ \multicolumn{1}{l|}{} & \co4  &  \multicolumn{4}{l|}  {Contrôle \C}  \\
+ \cline{2-6}
+ \multicolumn{2}{l|}{}  && 4\P && Contrôle \P \\
+  \multicolumn{2}{l|}{}  && ... && $\Rightarrow$  4SA :  pas de contrôle \K ou pas de Dame d'atout\\
+   \multicolumn{2}{l|}{}  && ... && $\Rightarrow$  \t5 :  ni contrôle \K ni Dame d'atout\\
+ \multicolumn{2}{l|}{}  && 4SA && Contrôle \K, pas de contrôle \P\\
+ \multicolumn{2}{l|}{}  && 5\T && Ni contrôle \K, ni contrôle \P \\
+ \cline{2-6} 
+ \multicolumn{1}{l|}{}  & 4\P  &  \multicolumn{4}{l|}  {Contrôle \P, pas de contrôle \C}  \\
+ \cline{2-6}
+ \multicolumn{2}{l|}{}  && 4SA && Contrôle \C, pas de contrôle \K ou pas de Dame d'atout\\
+ \multicolumn{2}{l|}{}  && 5\T && Pas de contrôle \C \\
+ \cline{2-6} 
+ \cline{2-6} 
+ \multicolumn{1}{l|}{}  & 4SA  &  \multicolumn{4}{l|}  {Contrôle \K, pas de contrôle majeur}  \\
+ \cline{2-6} 
+ \multicolumn{1}{l|}{}  & 5\T  &  \multicolumn{4}{l|}  {3 contrôles mais il manque la Dame d'atout (rare : je n'ai qu'une clef)} \\
+ \cline{2-6} 
+  \hhline{------}
+ \rowcolor{bananamania}  \co4 & \multicolumn{5}{l|} {Une clef (parfois 3) contrôle \C}\\
+ \hline
+
+ \multicolumn{1}{l|}{}  & 4\P  &  \multicolumn{4}{l|}  {Contrôle \P}  \\
+ \cline{2-6}
+ \multicolumn{2}{l|}{}  && 4SA && Contrôle \K ou Dame d'atout\\
+ \multicolumn{2}{l|}{}  && 5\T && Ni contrôle \K ni Dame d'atout \\
+ \cline{2-6} 
+ \multicolumn{1}{l|}{}  & 4SA  &  \multicolumn{4}{l|}  {Contrôle \K, pas de contrôle \P}  \\
+ \cline{2-6} 
+ \multicolumn{1}{l|}{}  & \t5  &  \multicolumn{4}{l|}  {Il manque deux clefs}  \\
+   \hhline{------}
+ \rowcolor{bananamania}  \p4 & \multicolumn{5}{l|} {Une clef  (parfois 3) contrôle \P, pas de contrôle  \C}\\
+   \hhline{------}
+   \hline
+
+ \multicolumn{1}{l|}{}  & 4SA  &  \multicolumn{4}{l|}  {Il manque le contrôle \K ou la Dame d'atout}  \\
+ \cline{2-6}
+ \multicolumn{1}{l|}{}  & \t5  &  \multicolumn{4}{l|}  {Conclusion}  \\
+ 
+  \hhline{------}
+ \rowcolor{bananamania}  4SA & \multicolumn{5}{l|} {Une clef  (parfois 3) contrôle \K, pas de contrôle majeur }\\
+   \hhline{------}
+ \rowcolor{bananamania}  \t5 & \multicolumn{5}{l|} {Zéro clef  ou grosse mauvaise nouvelle} \\
+   \hhline{------}
+ \rowcolor{bananamania}  \k5 \& + & \multicolumn{5}{l|} {Une clef, ambition de grand chelem, couleur de la bonne nouvelle} \\
+  \hhline{------}
+\end{tabular}
+
+
+
+\section*{Atout Carreau}
+
+\begin{tabular}{|l|l|>{$\Rightarrow$ }clc<{:}l|}
+ \hhline{--~}
+ \rowcolor{ashgrey}  \makebox[1.2cm][l]{}  & \makebox[1.2cm][l]{\k4}  \\
+ \hhline{------}
+ \rowcolor{bananamania}  \co4 & \multicolumn{5}{l|} {Deux clefs (parfois 4)} \\
+ \hline
+ \multicolumn{1}{l|}{} & \p4  &  \multicolumn{4}{l|}  {Contrôle \P}  \\
+ \cline{2-6}
+ \multicolumn{2}{l|}{}  && 4SA && Contrôle \C \\
+  \multicolumn{2}{l|}{}  && ... && $\Rightarrow$  \t5 :  pas de contrôle \T ou pas de Dame d'atout\\
+   \multicolumn{2}{l|}{}  && ... && $\Rightarrow$  \k5 :  ni contrôle \T ni Dame d'atout\\
+ \multicolumn{2}{l|}{}  && 5\T && Contrôle \T, pas de contrôle \C\\
+ \multicolumn{2}{l|}{}  && 5\K && Ni contrôle \T, ni contrôle \P \\
+ \cline{2-6} 
+ \multicolumn{1}{l|}{}  & 4SA  &  \multicolumn{4}{l|}  {Contrôle \C, pas de contrôle \P}  \\
+ \cline{2-6}
+ \multicolumn{2}{l|}{}  && 5\T && Contrôle \P, pas de contrôle \T ou pas de Dame d'atout\\
+ \multicolumn{2}{l|}{}  && 5\K && Pas de contrôle \P \\
+ \cline{2-6} 
+ \cline{2-6} 
+ \multicolumn{1}{l|}{}  & 5\T  &  \multicolumn{4}{l|}  {Contrôle \T, pas de contrôle majeur}  \\
+ \cline{2-6} 
+ \multicolumn{1}{l|}{}  & 5\K  &  \multicolumn{4}{l|}  {3 contrôles mais il manque la Dame d'atout (rare : je n'ai qu'une clef)} \\
+ \cline{2-6} 
+  \hhline{------}
+ \rowcolor{bananamania}  \p4 & \multicolumn{5}{l|} {Une clef (parfois 3) contrôle \P}\\
+ \hline
+
+ \multicolumn{1}{l|}{}  & 4SA  &  \multicolumn{4}{l|}  {Contrôle \C}  \\
+ \cline{2-6}
+ \multicolumn{2}{l|}{}  && 5\T && Contrôle \T ou Dame d'atout\\
+ \multicolumn{2}{l|}{}  && 5\K && Ni contrôle \T ni Dame d'atout \\
+ \cline{2-6} 
+ \multicolumn{1}{l|}{}  & 5\T  &  \multicolumn{4}{l|}  {Contrôle \T, absence de contrôle \C}  \\
+ \cline{2-6} 
+ \multicolumn{1}{l|}{}  & 5\K  &  \multicolumn{4}{l|}  {Oups, il manque deux As}  \\
+   \hhline{------}
+ \rowcolor{bananamania}  4SA & \multicolumn{5}{l|} {Une clef  (parfois 3) contrôle \C, pas de contrôle  \P}\\
+   \hhline{------}
+   \hline
+
+ \multicolumn{1}{l|}{}  & \t5  &  \multicolumn{4}{l|}  {Il manque le contrôle \T ou la Dame d'atout}  \\
+ \cline{2-6}
+ \multicolumn{1}{l|}{}  & \k5  &  \multicolumn{4}{l|}  {Conclusion}  \\
+ 
+  \hhline{------}
+ \rowcolor{bananamania}  \t5 & \multicolumn{5}{l|} {Une clef  (parfois 3) contrôle \T, pas de contrôle majeur }\\
+   \hhline{------}
+ \rowcolor{bananamania}  \k5 & \multicolumn{5}{l|} {Zéro clef  ou grosse mauvaise nouvelle} \\
+   \hhline{------}
+ \rowcolor{bananamania}  \co5 \& + & \multicolumn{5}{l|} {Une clef, ambition de grand chelem, couleur de la bonne nouvelle} \\
+  \hhline{------}
+\end{tabular}
+
+
+\end{document}
+
+
+
