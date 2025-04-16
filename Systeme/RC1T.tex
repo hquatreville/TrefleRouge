@@ -1,4 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{L'ouverture de 1\T}
 
 
@@ -23,14 +22,15 @@ L'ouverture de 1\T est à la fois la plus fréquente et la plus complexe.
 
 
 
-\enchbox{Ouverture 1\T}{
+\enchbox{Ouverture 1\T}
+{
  1\K & 5-11H & Pas de majeure 4\ieme\\
 
  1\C & 5H+ & Au moins 4 cartes à \P\\
 
-1\P & 0-4H & Toute distribution\\
-  \rb & 5-7DH & 4+ cartes à \C \\
-  & 12H+ & Ni majeure 4\ieme ni mineure 5\ieme\\
+1\P & 0-4H & ou\\
+  \rb & 5-7DH & 4+ cartes à \C ou \\
+  & 12H+ & régulier\\
 1\NT & 12H+ & 5 cartes à \T\\
 
  2\T & 12H+ & 5 cartes à \K\\
@@ -53,7 +53,6 @@ L'ouverture de 1\T est à la fois la plus fréquente et la plus complexe.
  4\C && Barrage 6 cartes\\
   4\P & 0-9H & Naturel 7+ cartes\\
   4\NT && Blackwood brutal\\
-
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,9 +114,9 @@ La règle utilisée ici est la suivante : «\textit{Le contre de toute enchère 
 Lorsque les adversaires sauvent le contrat, il faut être clair sur les priorités : Avec 5 cartes à \C, l'ouvreur doit en priorité rechercher un fit 5-3. Avec 4 cartes à \P, il faut soit punir avec 4 cartes dans leur couleur, soit rechercher le fit \P. Avec 3 cartes à \P et en acescence de fit \C, il arrivera parfois de devoir contrer punitivement en réveil avec seulement 3 atouts. La vulnérabilité a beaucoup d'importance quant à la conduite à tenir ici.
 
 
-
-\enchbox{1\T - 1SA - X - 2\T (Texas)}
-{%
+%_Option,1T<1NT>Double<2T> (Texas)
+\enchbox{1\T <1\NT> \Double <2\T> (Texas)}
+{
  \Pass & Banal Ou punitif à \K\\
  \Double & Appel \\
  2\K & Pas envie de punir\\
@@ -126,19 +125,20 @@ Lorsque les adversaires sauvent le contrat, il faut être clair sur les priorit�
  3\T & Canapé
 
 }
-
+%_Option
 Si l'enchère est naturelle
 
-\enchbox{1\T - 1SA - X - 2\T (Naturel)}{
+%_Option,1T<1NT>Double<2T> (Naturel)
+\enchbox{1\T <1\NT> \Double <2\T> (Naturel)}
+{
  \Pass & Appel\\
  \Double & Punitif\\
  2\K & Canapé\\
  2\C & 5 cartes 15-17H\\
  2\P & Bicolore cher\\
  3\T & Pas envie de punir
-
 }
-
+%_Option
 
 
 \section*{Intervention 2\T ou 2\K}
@@ -164,7 +164,7 @@ Avec un Canapé, on le nomme.
 
 
 \titre{
-  1\T -- 1\K --}
+  1\T -- 1\K}
 
 
 Le répondant a montré un jeu de 5 à 11H.
@@ -176,8 +176,8 @@ Par ailleurs, la redemande à 1\P permet aussi d'annoncer les jeux forts non for
 
 \textit{Avec un jeu régulier de 15-17H et 5 cartes à \C, il y a débat. Faut-il répondre 1\C ou 1\NT ? Dans l'état actuel du système, on répond 1\NT de sorte que 1\C montre un jeu excentré ou de 18H+}
 
-\enchbox{1\T -- 1\K --}{%
-
+\enchbox{1\T -- 1\K}
+{
  1\C & 15H+ & 5+ cartes à \C\\
  1\P & 12H-14H & Régulier\\
  \rw & 15H+ & Excentré, exactement 4 cartes à \C \\
@@ -247,14 +247,15 @@ Le plus souvent, le répondant se contente de rectifier à 1\NT. Maintenant, en 
 3\K & 5-8H & 7 cartes \\
 }
 
-\enchbox{1\T--1\K -- 1\P--1SA}{
+\enchbox{1\T--1\K -- 1\P--1\NT}
+{
 2\T & 15-17H & Canapé\\
 2\K & 15-17H & Canapé \\
 2\C & 18+H & 4-4-4-1\\
-\rb    & relai & 2\P quasi-obligatoire\\
-\rb -> & 2\NT& Singleton \P\\
-\rb -> & 3\T & Singleton \T\\
-\rb -> & 3\K & Singleton \K \\
+-> & 2\P\ & relai quasi-obligatoire\\
+->->&& 2\NT singleton \P\\
+->->&& 3\T singleton \T\\
+->->&& 3\K singleton \K\\
 2\P &  & Bicolore 6-5 \\
 2\NT & 22H+ & Régulier \\
 3\T & 18-19H & Canapé \\
@@ -289,13 +290,14 @@ Les autres enchères au niveau de 3 montrent un singleton (3\C dans la mejeur de
 
 
 \titre{
-  1\T -- 1\C --}
+  1\T -- 1\C}
 
 Le répondant a montré 4 cartes à  \P.
 
 L'enchère de 1\C dévore un peu d'espace. Cela a deux conséquences. Le relai à 1\P devient moins précis. Il montrera le plus souvent une main régulière de 12-14H non fitté à \P. mais il peut cacher un fit \P forcing de manche ainsi que tout un tas de mains fortes. D'autre part, la réponse de 1SA peut masquer 5 cartes à \C.
 
-\enchbox{1\T -- 1\C --}{%
+\enchbox{1\T -- 1\C}
+{
 
  1\P & 12H+ & Relai fourre-tout\\
  1\NT & 15-17H  & Régulier\\
@@ -318,23 +320,24 @@ L'enchère de 1\C dévore un peu d'espace. Cela a deux conséquences. Le relai �
 
 C'est la séquence la plus ambiguë.
 
-Le fit \C est exclu mais le fit \P est encore possible. Si l'ouvreur a une main forte, il le fera savoir. Une redemande ultérieure à \P de l'ouvreur montrera une main très forte (au moins 20 points) et sera forcing de manche.
+Le fit \C et le fit \P sont encore possibles. Avec 5 cartes à \P, le répondant réitère son Texas.
 
-Avec 5 cartes à \P, le répondant répète ses piques avec un jeu faible ou passe par l'enchère de 2\C avec au moins 11H.
+La difficulté de la séquence est la nécessité de disposer d'une enchère forte pour le répondant pour les cas où il aurait plus de 16 points d'honneur.
 
-Les enchères en mineure sont des Canapés. Et tout ce qui est au niveau de 3 est forcing de manche.
+Il y a trois candidats : 2\T qui pose un problème de mémorisation, 2\P qui pose un problème de mémorisation et 3\T semi-naturel qui permet de retomber sur ses pieds.
+J'ai choisi (provisoirement) 2\P qui est a priori la plus facile à manier. De plus, les enchères à pique sont presque toutes artificielles dans le système.
 
 \enchbox{1\T--1\C--1\P}
 {
 1\NT & 5-10H & 4 cartes à \P \\
 2\T  & 5-10H & 5+ cartes à \T \\
 2\K  & 5-10H & 5+ cartes à \K \\
-2\C  & 11H + & 5+ cartes à \P \\
-2\P  & 5-10H & 5+ cartes à \P \\
+2\C  & 5H + & 5+ cartes à \P \\
+2\P  & 16H+ & artificiel \\
 2\NT & 11H & Fourre-tout \\
 3\T & 12H+ & 5+ cartes à \T \\
 3\K & 12H+ & 5+ cartes à \K \\
-3\C & 16H+ & Régulier \\
+3\C & 13-15H+ & 3 cards in !H \\
 3\P & 15H+ & 6 belles cartes à \P \\
 3SA & 13-15H & Régulier \\
 }
@@ -349,7 +352,7 @@ Les enchères en mineure sont des Canapés. Et tout ce qui est au niveau de 3 es
  Le principe est le suivant : toute enchère à saut est forcing de manche, soit dans une optique de chelem, soit dans une optique de recherche de la meilleure manche.
  Toute enchère sans saut indique la zone au dessus que la même enchère non précédée de 1\P.
 
- \enchbox{1T--1\C--1\P--1\NT}
+ \enchbox{1\T--1\C--1\P--1\NT}
  {
  2\T & 15-17H(18) & 5 cartes à \T \\
  2\K & 15-17H(18) & 5 cartes à \K \\
@@ -373,12 +376,14 @@ La nomination d'une mineure est canapé et dénie 5 cartes à pique.
 
 Si le répondant hésite à jouer 3SA, il montre son singleton au niveau de 3.
 
+Le redemande artificiel à 2\P est moins utile qu'après une réponse à 1\P (4\NT quantitatif fonctionnerait) mais elle est maintenue ici par souci d'homogénéité du système.
+
 \enchbox{1\T--1\C--1\NT}
 {
 2\T &5-7H& 5 cartes faible\\
 2\K &5-7H& 5 cartes faible\\
-2\C& 8H+& 5 cartes à \P\\
-2\P& 5-7H & 5 cartes à \P\\
+2\C& 5H+& 5 cartes à \P\\
+2\P& 16H+ & Artificiel \\
 2\NT & 8H & Naturel \\
 3\T & 9H+ & Singleton \T\\
 3\K & 9H+ & Singleton \K\\
@@ -403,7 +408,7 @@ Les autres enchères au niveau de 3 montrent un singleton (3\C dans la mejeur de
 
 
 \titre{
-  1\T -- 1\P --}
+  1\T -- 1\P}
 
 La réponse de 1\P est un signal d'alarme. La main peut être très faible. Et même si elle est forte, il ne faudra pas en attendre plus qu'un tas de points H.
 L'ouvreur considère dans un premier temps que l'enchère est faible et avisera le cas échéant.
@@ -415,15 +420,16 @@ Les sauts sont forcing de manche à la recherche du meilleur contrat, jouable en
 
 
 
-\enchbox{1\T -- 1\P --}{%
-
+\enchbox{1\T -- 1\P}
+{
  1\NT & 12H-19H & Régulier\\
  2\T & 12-21H & Canapé\\
  2\K & 12-21H & Canapé\\
  2\C & 15-21H & 5 cartes à \C, irrégulier \\
- 2\P & 22-23H & Tout type de main, relai obligatoire à 2\NT\\
- \rb-> & 3\T & Naturel non forcing \\
- -> & 3\K & Naturel non forcing \\
+ 2\P & 22-23H & Tout type de main\\
+ -> 2\NT relai obligatoire
+ ->-> & 3\T & Naturel non forcing \\
+ ->-> & 3\K & Naturel non forcing \\
  \rb-> & 3\C & Naturel non forcing \\
  2\NT & 22-23H & Régulier\\
  3\T & & Naturel Forcing de manche\\
@@ -485,8 +491,7 @@ Sur toute redemande de l'ouvreur à 2\NT, 3\T est un check-back Stayman. On util
 Les autres enchères au niveau de 3 montrent un singleton (3\C dans la mejeur de l'ouvreur pour le singleton \T)
 
 
-\titre{
-  1\T -- 1SA --}
+\titre{1\T -- 1\NT}
 
 
 L'enchère de 1SA est forcing de manche avec une vraie couleur \T. Par ailleurs, l'enchère dénie 4 cartes à \C et 4 cartes à \P.
