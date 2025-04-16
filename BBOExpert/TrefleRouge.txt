@@ -1,0 +1,20 @@
+// BBOalert, Trefle Rouge
+
+Import,https://github.com/stanmaz/BBOalert/blob/master/Scripts/setTeachingTable.js
+
+Option,Lang FR
+Option,Lang EN
+Alias,chicane,void
+Alias,Régulier,balanced
+Alias,Au moins,at least
+Alias,cartes à,cards
+Alias,Pas de majeure 4ième,no 4-card major
+Option
+
+Import,{RC1T.tex},https://github.com/stanmaz/BBOalert/blob/master/Systems/TrefleRouge/System/RC1T.tex
+Import,{RC1K.tex},https://github.com/stanmaz/BBOalert/blob/master/Systems/TrefleRouge/System/RC1K.tex
+Import,{RC1C.tex},https://github.com/stanmaz/BBOalert/blob/master/Systems/TrefleRouge/System/RC1C.tex
+Import,{RC1P.tex},https://github.com/stanmaz/BBOalert/blob/master/Systems/TrefleRouge/System/RC1P.tex
+Import,{RC1SA.tex},https://github.com/stanmaz/BBOalert/blob/master/Systems/TrefleRouge/System/RC1SA.tex
+Import,{RC2m.tex},https://github.com/stanmaz/BBOalert/blob/master/Systems/TrefleRouge/System/RC2m.tex
+Import,{RC2C.tex},https://github.com/stanmaz/BBOalert/blob/master/Systems/TrefleRouge/System/RC2C.tex
