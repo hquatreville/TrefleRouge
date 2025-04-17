@@ -15,6 +15,11 @@ Alias,indéterminée,somewhere
 Alias,forcing de manche,game forcing
 Alias,naturel,natural
 Alias,Naturel,Natural
+Alias,Excentré,Unbalanced
+Alias,excentré,unbalanced
+Alias,exactement,exactly
+Alias,faible,weak
+Alias,obligatoire,mandatory
 Option
 
 
