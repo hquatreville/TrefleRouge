@@ -20,6 +20,12 @@ Alias,excentré,unbalanced
 Alias,exactement,exactly
 Alias,faible,weak
 Alias,obligatoire,mandatory
+Alias,fitté,fitted
+Alias, ou, or,
+Alias,pas,not
+Alias,beau fit,good fit
+Alias,Barrage,Preemption
+Alias,barrage,preemtion
 Option
 
 
