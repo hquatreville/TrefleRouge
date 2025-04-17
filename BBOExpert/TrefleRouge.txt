@@ -5,10 +5,16 @@ Import,https://github.com/stanmaz/BBOalert/blob/master/Scripts/setTeachingTable.
 Option,Lang FR
 Option,Lang EN
 Alias,chicane,void
-Alias,Régulier,balanced
-Alias,Au moins,at least
-Alias,cartes à,cards
+Alias,Régulier,Balanced
+Alias régulier,balanced
+Alias,Au moins,At least
+Alias,carte,card,
+Alias, à, in ,
 Alias,Pas de majeure 4ième,no 4-card major
+Alias,indéterminée,somewhere
+Alias,forcing de manche,game forcing
+Alias,naturel,natural
+Alias,Naturel,Natural
 Option
 
 
