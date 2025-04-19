@@ -1,5 +1,5 @@
 \documentclass[a4paper,12pt, french]{book}
-%// BBOalert, Trefle Rouge
+
 \usepackage[french]{babel}
 
 \PassOptionsToPackage{table}{xcolor}
