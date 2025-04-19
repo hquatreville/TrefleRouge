@@ -86,21 +86,23 @@ Ainsi, le répondant peut soit conclure, soit rechercher un chelem, éventuellem
 Comme sur toute redemande à 2\NT, 3\T est un checkback Stayman, à la recherche d'un fit \C (le fit \P étant exclu par la réponse de 1\P);
 Les autres enchères annoncent un singleton.
 
-Il n'est hélas pas possible d'annoncer un singleton \T sans dépasser 3\NT. Avec un tel singleton, il est toujors possible d'annoncer 4\K en cas d'espoir de chelem. Sinon 3\NT dera l'affaire.
+Il n'est hélas pas possible d'annoncer un singleton \T sans dépasser 3\NT. Avec un tel singleton, il est toujors possible d'annoncer 4\K en cas d'espoir de chelem. Sinon 3\NT fera l'affaire.
 
 \enchbox{1\C--1\P--2\NT}
 {
 3\T && checkback Stayman \\
--> &  3\K & impossible \\
--> &  3\C & 3 cartes à \C \\
--> & 3\P & impossible \\
--> & 3\NT & 2 cartes à \C \\
+\rw -> &  3\K & impossible \\
+\rw -> &  3\C & 3 cartes à \C \\
+\rw -> & 3\P & impossible \\
+\rw -> & 3\NT & 2 cartes à \C \\
 3\K && singleton \K \\
 3\C && singleton \C \\
 3\P && singleton \P \\
 3\NT && conclusion \\
 4\T && chelem \T \\
-4\K && chelem \K
+\rb -> & 4\NT & refus \\
+\rw 4\K && chelem \K \\
+ -> & 4\NT & refus \\
 }
 
 \textit{Remarque : Les esprits tordus peuvent modifié le check-back pour y inclure la possibilité du singleton \T. L'effort de mémoire à fournir rend la chose scabreuse.}
