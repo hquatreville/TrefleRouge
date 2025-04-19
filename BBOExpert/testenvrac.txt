@@ -107,7 +107,7 @@ fonttitle=\bfseries,nobeforeafter,center title}
 {
 1\NT && tralalaïtou \\
 2\T  && plumpudding\\
-2\K  && \VoirChat\# explanation\\
+2\K  && \VoirChat# explanation\\
 }
 
 
