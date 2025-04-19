@@ -1,4 +1,5 @@
 \documentclass[a4paper,12pt, french]{book}
+%// BBOalert, Trefle Rouge
 \usepackage[french]{babel}
 
 \PassOptionsToPackage{table}{xcolor}
@@ -102,7 +103,7 @@ fonttitle=\bfseries,nobeforeafter,center title}
 \begin{document}
 
 
-\enchbox{1\C--1\P--}
+\enchbox{1\C -- 1\P}
 {
 1\NT && tralalaïtou \\
 2\T  && plumpudding\\
@@ -113,3 +114,11 @@ fonttitle=\bfseries,nobeforeafter,center title}
 
 
 \end{document}
+
+
+
+
+
+
+
+
