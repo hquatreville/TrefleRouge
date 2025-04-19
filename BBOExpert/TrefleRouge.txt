@@ -5,9 +5,8 @@ Import,https://github.com/stanmaz/BBOalert/blob/master/Scripts/setTeachingTable.
 Option,Lang FR
 Option,Lang EN
 Alias,chicane,void
-Alias,Régulier,Balanced
 Alias régulier,balanced
-Alias,Au moins,At least
+Alias,au moins,at least
 Alias,carte,card,
 Alias, à, in ,
 Alias,Pas de majeure 4ième,no 4-card major
@@ -15,7 +14,6 @@ Alias,indéterminée,somewhere
 Alias,forcing de manche,game forcing
 Alias,naturel,natural
 Alias,Naturel,Natural
-Alias,Excentré,Unbalanced
 Alias,excentré,unbalanced
 Alias,exactement,exactly
 Alias,faible,weak
@@ -24,17 +22,13 @@ Alias,fitté,fitted
 Alias, ou, or,
 Alias,pas,not
 Alias,beau fit,good fit
-Alias,Barrage,Preemption
 Alias,barrage,preemtion
 Alias,relai,relay
 Alias,possiblement,possibly
 Alias,plus long,longer
 Option
 
-
 Import,{RCbase.tex},https://github.com/hquatreville/TrefleRouge/blob/main/Systeme/RCbase.tex
-Import,{RCIntro.tex},https://github.com/hquatreville/TrefleRouge/blob/main/Systeme/RCIntro.tex
-Import,{RCExemple.tex},https://github.com/hquatreville/TrefleRouge/blob/main/Systeme/RCExemple.tex
 Import,{RC1T.tex},https://github.com/hquatreville/TrefleRouge/blob/main/Systeme/RC1T.tex
 Import,{RC1K.tex},https://github.com/hquatreville/TrefleRouge/blob/main/Systeme/RC1K.tex
 Import,{RC1C.tex},https://github.com/hquatreville/TrefleRouge/blob/main/Systeme/RC1C.tex
