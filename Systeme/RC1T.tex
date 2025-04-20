@@ -26,7 +26,7 @@ L'ouverture de 1\T est à la fois la plus fréquente et la plus complexe.
 {
  1\K & 5-11H & Pas de majeure 4\ieme\\
  1\C & 5H+ & Au moins 4 cartes à \P \\
- 1\P & 0-4H & ou\\
+ 1\P & 0-4H & toute distribution ou \\
   \rb & 5-7DH & 4+ cartes à \C ou \\
   & 12H+ & régulier\\
 1\NT & 12H+ & 5 cartes à \T \\
@@ -94,7 +94,6 @@ Une mineure cinquième de mauvaise qualité par exemple ou 4 cartes à pique. Le
 1\P & 12H+ &  \\
 1\NT &8H+ & 5 cartes à \T \\
 2\T &8H+ & 5 cartes à \K \\
-
 }
 
 \section*{Intervention par 1\K}
@@ -112,7 +111,10 @@ le répondant ne s'engage à reparler que s'il à 12H et plus. Un ouvreur doté 
 }
 
 
-\section*{Intervention naturelle par 1\C}
+\section*{Intervention par 1\C}
+Que l'enchère soit naturelle ou artificielle, on ne change rien. il est impossible de prévoir ce que les adversaires peuvent inventer.
+Si l'enchère de 1\C promet explicitement une longueur à \P, il est clair que le \Double est plutôt à la recherche d'une mineure\dots
+
 le \Double est d'appel et recherche en priorité un fit à \P. L'enchère de 1\P devient exclusivement forcing de manche. Les enchères Texas de 1\NT et de 2\T ne promettent plus que 8H.
 Les enchères de 2\K et de 2\C sont inchangées, on part du principe que les adversaires se sont trompé.
 
@@ -124,9 +126,7 @@ Les enchères de 2\K et de 2\C sont inchangées, on part du principe que les adv
 2\T &8H+ & 5 cartes à \K \\
 }
 
-\section*{Intervention artificielle non bicolore par 1\C}
-Que l'enchère soit naturelle ou artificielle, on ne change rien. il est impossible de prévoir ce que les adversaires peuvent inventer.
-Si l'enchère de 1\C promet explicitement une longueur à \P, il est clair que le \Double est plutôt à la recherche d'une mineure\dots
+
 
 \section*{Intervention par 1\P}
 Le \Double promet 8H et n'est plus limité à 11H puisqu'on ne dispose plus de l'enchère de 1\P. Les enchères Texas de 1\NT et de 2\T ne promettent plus que 8H.
@@ -201,7 +201,7 @@ Et l'enchère de 3\C indique un soutien limite de manche.
 \enchbox{1\T <2\T>}
 {
 \Double &8H+& 4+ cartes à \P \\
-2\K && naturel \\
+2\K && naturel forcing \\
 2\H && naturel \\
 2\P  && naturel forcing \\
 3\H  && limite de manche \\}
@@ -210,10 +210,11 @@ Et l'enchère de 3\C indique un soutien limite de manche.
 {
 \Double &8H+& 4+ cartes à \P \\
 2\P  && naturel forcing \\
+3\T && naturel forcing \\
 3\H  && limite de manche \\
 }
 
-\section*{barrage}
+\section*{barrages}
 
 Lorsque les adversaires barrent à 3\T ou 3\K, le contre d'appel aura presque toujours 4 cartes à pique.
 Toutefois, sans 4 cartes à \P et sans arrêt dans la couleur de l'intervention, l'ouvreur fait face à un dilemme.
@@ -262,7 +263,7 @@ La redemande de 1\NT indique une main de 15-17H. Avec une main régulière de 12
 
 Par ailleurs, la redemande à 1\P permet aussi d'annoncer les jeux forts non forcing de manche.
 
-\textit{Avec un jeu régulier de 15-17H et 5 cartes à \C, il y a débat. Faut-il répondre 1\C ou 1\NT ? Dans l'état actuel du système, on répond 1\NT de sorte que 1\C montre un jeu excentré ou de 18H+}
+\textit{Avec un jeu régulier de 15-17H et 5  cartes à \C, il y a débat. Faut-il répondre 1\C ou 1\NT ? Dans l'état actuel du système, on répond 1\NT de sorte que 1\C montre un jeu excentré ou de 18H+}
 
 \enchbox{1\T -- 1\K}
 {
@@ -640,9 +641,64 @@ Sur la redemande à 3\K, les enchères de 3\C et de 3\P sont aussi des singleton
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\titre{1\T--2\K}
+
+L'enchère de 2\K annonce de fit \C et une main au moins limite de manche.
+
+Les mains de manche passant par 2\K auront toujours un petit quelque chose en plus. Une couleur cinquième secondaire productrice de levées (d'autes systèmes feraient un soutien différé) ou 4 atouts et un singleton. Les mains banales de manche passent par 2\NT pour éviter de donner de faus-espoirs à l'ouvreur.
+
+Avec une main faible, 12-13H, l'ouvreur se contente de rectifier à 2\C. Avec une main banale de manche, il annonce symmétriquement 2\NT, enchère sur laquelle le répondant conclueera à 4\C le plus souvent.
+
+Avec une main distribuée, l'ouvreur montre sa deuxième couleur au niveau de 3 ou fait un splinter. Avec une bombe, il annonce 3\C qui est l'enchère la plus forte posssible dans ce contexte.
+
+\enchbox{1\T--2\K}
+{
+2\C & 12-13H & \\
+2\P & 16-18H & naturel \\
+2\NT & 14-18H & wait and see \\
+3\T & 14H+ & 5 cartes \\
+3\K & 14H+ & 5 cartes \\
+3\C & 19H+ & chelem \\
+3\P & 15-17H & splinter \\
+3\NT & 14-16H & régulier \\
+4\T  & 15-17H & splinter \\
+4\K & 15-17H & splinter \\
+}
+
+\textit{Remarque : les zones des splinters sont donnés à titre indicatif. Il faudra ajuster avec la pratique.}
+
+
+\titre{1\T--2\C}
+
+Les enchères suivent les mêmes principes que sur la réponse à 2\K avec une différence de taille. L'ouvreur concluera à 4\C au lieu de transiter par 2\NT.
+
+\enchbox{1\T--2\C}
+{
+2\P & 19H+ & naturel \\
+2\NT & 15-16H & limite de manche \\
+3\T & 19H+ & 5 cartes excentré\\
+3\K & 19H+ & 5 cartes excentré\\
+3\C & 22H+ & chelem \\
+3\P & 20-22H & splinter \\
+3\NT & 17-20 & régulier \\
+4\T  & 20-22H & splinter \\
+4\K & 20-22H & splinter \\
+}
+
 \titre{1\T--2\NT}
 
 En annonçant 2\NT, le répondant annonce une main banale de manche sans ambition de chelems. le plus souvent, l'ouvreur conclu à 4\C.
 
 Cependant, il n'a pas limité sa main. Toute autre enchère que 4\C est une tentative de chelem. L'enchère la plus forte est 3\C qui déclenche immédiatement la procédure de contrôles. Les enchères de 3\T et 3\K sont naturelles et demande au partenaire de juger sa main. Les enchères de
 3\P, 4\T et de 4\K sont des splinters, pour que le partenaire juge sa main. \textit{Avec un bicolore majeur 6-5, rien de spécial n'est prévu, hors peut-être, le Blackwood d'exclusion à 5\T et 5\K pour les experts.}
+
+\enchbox{1\T--2\NT}
+{
+3\T & 14H+ & 5 cartes excentré\\
+3\K & 14H+ & 5 cartes excentré\\
+3\C & 19H+ & chelem \\
+3\P & 14-16H & splinter \\
+3\NT & 17-20 & régulier \\
+4\T  & 14-16H & splinter \\
+4\K & 14-16H & splinter \\
+}
