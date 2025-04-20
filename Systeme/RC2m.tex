@@ -6,7 +6,7 @@
 
 L'ouverture de 2\T indique au moins 5 cartes à trèfle et entre 12 et 14H. Pas de majeure 4\ieme.
 Attention, dans cette zone, les mains 5-3-3-2 s'ouvrent systématiquement de 1SA.
-Les bicolores mineurs 5-4-2-2 de 12-13H s'ouvrent systématiquement de 1SA de même que les unicolores 6-3-2-2. De sorte que l'ouverture de 2\T garanti 14H ou un singleton.
+Les bicolores mineurs 5-4-2-2 de 12-13H s'ouvrent systématiquement de 1SA de même que les unicolores 6-3-2-2. De sorte que l'ouverture de 2\T garanti 14H ou sept cartes ou un singleton.
 
 Avec une majeure 5\ieme et une main au moins limite de manche, le répondant utilise un relai à 2\K.
 
@@ -18,16 +18,16 @@ Cette ouverture est censé être un point fort du système. Il quelques petits d
 
 \enchbox{Ouverture de 2\T}
 {
-2\K & 10H+ & Relai \\
+2\K & 10H+ & relai \\
 2\C & 3-8H & 6 belles cartes à \C \\
 2\P & 3-8H & 6 cartes cartes à \P \\
-2SA & 11H & Proposition\\
-3\T & 5-9H & Au moins 3 cartes \\
-3\K & 12H+ & Naturel \\
-3\C & 9-11H & Belle couleur 6\ieme\\
-3\P & 9-11H & Belle couleur 6\ieme\\
-3\NT && Conclusion \\
-4\T && Chelem \\
+2SA & 11H & limite\\
+3\T & 5-9H & au moins 3 cartes \\
+3\K & 12H+ & naturel \\
+3\C & 9-11H & belle couleur 6\ieme\\
+3\P & 9-11H & belle couleur 6\ieme\\
+3\NT && conclusion \\
+4\T && chelem \\
 }
 
 
@@ -39,10 +39,15 @@ L'enchère de 2\K relai est une sorte de troisième couleur forcing. Toutes les 
 \enchbox{2\T -- 2\K}
 {
 2\C &12-14H & 3 cartes à \C \\
-2\P &12-14H & 3 cartes à \P (pas à \C)\\
+2\P &12-14H & 3 cartes à \P (0-2 \C)\\
 2SA &12-13H & 6-4 médiocre\\
 3\T &12-14H & 7 cartes à \T \\
-3\K &12-14H & Bicolore 6-5\\
+-> & 3\K & gadget \\
+->-> & 3\C & singleton \C \\
+->-> & 3\P & singleton \P \\
+->-> & 3\NT & 7-2-2-2 \\
+->-> & 4\T &  singleton \K (8\T)\\
+3\K &12-14H & bicolore 6-5\\
 3\C &14H& 6-4 singleton \C \\
 3\P &14H& 6-4 singleton \P \\
 3SA &14H& 2-2-4-5 ou 2-2-3-6\\
@@ -66,11 +71,11 @@ L'enchère de 2\K relai est une sorte de troisième couleur forcing. Toutes les 
  \enchbox{2\T--2\K--2\C}
  {
   2\P  && 5 cartes à \P \\
-  2\NT && Fit \T limite \\
- 3\T &10-11H & Fit \T limite\\
- 3\K & 12H+& Fit \T forcing manche\\
- 3\C &10-11H& Proposition à \C \\
- 3\P && Chelem à \C \\
+  2\NT && fit \T limite \\
+ 3\T &10-11H & fit \T limite\\
+ 3\K & 12H+& fit \T forcing manche\\
+ 3\C &10-11H& naturel limite \\
+ 3\P && chelem à \C \\
  }
 
 \subsection*{La séquence 2\T--2\K--2\C--2\P}
@@ -88,8 +93,8 @@ L'enchère de 2\K relai est une sorte de troisième couleur forcing. Toutes les 
  2\NT & 12-13H& 1\P-3\C-4\K-5\T \\
  3\T  & 12-13H& 1\P-3\C-3\K-6\T \\
  3\K  & 12-14H& 3\P-3\C-1\K-6\T \\
- \rb -> & 3\C & Chelem à \P \\
- -> & 3\P & Proposition \\
+ \rb -> & 3\C & chelem à \P \\
+ -> & 3\P & naturel limite \\
  3\C & 14H & 1\P-3\C-4\K-5\T \\
  3\P & 14H& 1\P-3\C-3\K-6\T \\
  3\NT &14H & 2\P-3\C-3\K-6\T \\
@@ -97,11 +102,25 @@ L'enchère de 2\K relai est une sorte de troisième couleur forcing. Toutes les 
 
  \subsection*{La séquence 2\T--2\K--2\C--3\T}
 
- En disant 3\T, le répondant montre qu'il n'était pas intéressé par les majeures mais veut juste explorer la manche. Il n'a pas dit 2\NT, l'ouvreur doit donc se méfier. Avec 14H sans singleton, il peut conclure. Sinon, avec 14H toujours, il annonce son singleton, 3\K avec un singleton \K et 3\K avec un singleton \P.
+ En disant 3\T, le répondant montre qu'il n'était pas intéressé par les majeures mais veut juste explorer la manche. Il n'a pas dit 2\NT, l'ouvreur doit donc se méfier. Avec 14H sans singleton, il peut conclure. Sinon, avec 14H toujours, il annonce son singleton, 3\K avec un singleton \K et 3\P avec un singleton \P.
+
+ \enchbox{2\T--2\K--2\C--3\T}
+ {
+ 3\K & 14H & singleton \K \\
+ 3\P & 14H & singleton \P \\
+ 3\NT & 14H & pour les jouer \\
+ }
 
  \subsection*{La séquence 2\T--2\K--2\C--3\K}
 
  Dans cette situation, l'ouvreur annonce toujours son singleton. 3\C avec un singleton \K (faute de place), 3\P avec un singleton \P et 3\NT sans singleton.
+
+  \enchbox{2\T--2\K--2\C--3\K}
+ {
+ 3\C && singleton \K \\
+ 3\P && singleton \P \\
+ 3\NT && régulier \\
+ }
 
 \subsection*{La séquence 2\T--2\K--2\P}
 
@@ -112,16 +131,23 @@ L'enchère de 2\K relai est une sorte de troisième couleur forcing. Toutes les 
 
  \enchbox{La séquence 2\T--2\K--2\P}
  {
- 2\NT &11H& Proposition \\
- 3\T & 10-11H& Fit \T limite  \\
- 3\K & 12H+ & Fit \T forcing \\
- 3\C && Chelem à \P \\
- 3\P &11H& Proposition \\
+ 2\NT &11H& proposition \\
+ 3\T & 10-11H& fit \T limite  \\
+ 3\K & 12H+ & fit \T forcing \\
+ 3\C && chelem à \P \\
+ 3\P &11H& proposition \\
  }
 
   \subsection*{La séquence 2\T--2\K--2\P--3\K}
 
   Dans cette situation, l'ouvreur annonce toujours son singleton. 3\C avec un singleton \C, 3\P avec un singleton \K (faute de place) et 3\NT sans singleton.
+
+  \enchbox{2\T--2\K--2\P--3\K}
+  {
+  3\C && singleton \C \\
+  3\P && singleton \K \\
+  3\NT && régulier \\
+  }
 
 \subsection*{La séquence 2\T--2\K--2\NT}
 
@@ -159,7 +185,7 @@ L'enchère de 2\K relai est une sorte de troisième couleur forcing. Toutes les 
 \begin{multicols}{2}
 L'ouverture de 2 \K indique au moins 5 cartes à carreau et entre 12 et 14H. Pas de majeure 4\ieme.
 Attention, dans cette zone, les mains 5-3-3-2 s'ouvrent systématiquement de 1SA.
-Les bicolores mineurs 5-4-2-2 de 12-13H s'ouvrent systématiquement de 1SA de même que les unicolores 6-3-2-2. De sorte que l'ouverure de 2\K garanti 14H ou un singleton.
+Les bicolores mineurs 5-4-2-2 de 12-13H s'ouvrent systématiquement de 1SA de même que les unicolores 6-3-2-2. De sorte que l'ouverure de 2\K garanti 14H ou sept cartes ou un singleton.
 
 Le problème des carreaux se pose ici. On perd la possibilité de s'arrêter à 2\C qui devient relai. De même après la réponse à 2\P sur le relai à 2\C, on perd l'enchère naturelle de 2SA qui devient un relai pour retrouver les \C.
 
@@ -167,13 +193,13 @@ A part cela, la logique de l'ouverture de 2\K, ainsi que les petites astuces, es
 
 \enchbox{Ouverture de 2\K}
 {
-2\C  &10H+ & Relai ambiguë\\
-2\P & 3-8H & 6 cartes cartes à \P \\
-2SA & 11H & Proposition\\
-3\T & 12H+ & Naturel\\
-3\K & 5-9H & Au moins 3 cartes \\
-3\C & 9-11H & Naturel, belle couleur 6\ieme\\
-3\P & 9-11H & Naturel, belle couleur 6\ieme\\
+2\C  &10H+ & relai ambiguë\\
+2\P & 3-8H & 6 belles cartes à \P \\
+2SA & 11H & proposition\\
+3\T & 12H+ & naturel\\
+3\K & 5-9H & au moins 3 cartes \\
+3\C & 9-11H & naturel, belle couleur 6\ieme\\
+3\P & 9-11H & naturel, belle couleur 6\ieme\\
 }
 
 \enchbox{2\K--2\C--}
@@ -196,14 +222,14 @@ A part cela, la logique de l'ouverture de 2\K, ainsi que les petites astuces, es
  \enchbox{2\K--2 \C--2\P}
  {
  2\NT && 5 cartes à \C \\
-\rw -> & 3\T & Singleton \C \\
+\rw -> & 3\T & singleton \C \\
  \rw-> & 3\K & 3 cartes à \C \\
 \rw -> & 3\NT & 3-2-6-2 (14H) \\
 \rw -> & 4\K & 7+ cartes à \K \\
 \rb 3\T & & Fit \K forcing \\
  \rw 3\K & & Fit \K limite\\
- \rb 3\C && Proposition \\
- \rw 3\P && Chelem à \C \\
+ \rb 3\C && proposition \\
+ \rw 3\P && chelem à \C \\
  }
 
   \subsection*{La séquence 2\K--2\C--2\P--2\NT}
