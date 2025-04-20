@@ -2,31 +2,7 @@
 
 Import,https://github.com/stanmaz/BBOalert/blob/master/Scripts/setTeachingTable.js
 
-Option,Lang FR
-Option,Lang EN
-Alias,chicane,void
-Alias régulier,balanced
-Alias,au moins,at least
-Alias,carte,card,
-Alias, à, in ,
-Alias,Pas de majeure 4ième,no 4-card major
-Alias,indéterminée,somewhere
-Alias,forcing de manche,game forcing
-Alias,naturel,natural
-Alias,Naturel,Natural
-Alias,excentré,unbalanced
-Alias,exactement,exactly
-Alias,faible,weak
-Alias,obligatoire,mandatory
-Alias,fitté,fitted
-Alias, ou, or,
-Alias,pas,not
-Alias,beau fit,good fit
-Alias,barrage,preemtion
-Alias,relai,relay
-Alias,possiblement,possibly
-Alias,plus long,longer
-Option
+Import,https://github.com/hquatreville/Data-for-BBOAlert/blob/main/Anglais
 
 Import,{RCbase.tex},https://github.com/hquatreville/TrefleRouge/blob/main/Systeme/RCbase.tex
 Import,{RC1T.tex},https://github.com/hquatreville/TrefleRouge/blob/main/Systeme/RC1T.tex
