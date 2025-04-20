@@ -11,19 +11,19 @@ Avec un bicolore majeur 5-5, le répondant utilise la séquence 1SA-2\K-2\C-2\P 
 
 \enchbox{Ouverture de 1\NT}
 {
-2\T &0H+& Puppet Stayman \\
--> &  2\K & Pas de majeure cinquième\\
+2\T &0H+& puppet stayman \\
+-> &  2\K & pas de majeure cinquième\\
 \rw -> & 2\C & 5 cartes à \C \\
  -> &  2\P & 5 cartes à \P \\
-2\K &0H+& Texas \C \\
-2\C &0H+& Texas \P \\
-2\P &0H+& Texas \T \\
-2\NT &12H+& Bicolore mineur\\
-3\T &0H+& Texas \K \\
-3\K &16+& Texas \C de chelem\\
-3\C &16H+& Texas \P de chelem\\
-3\NT &12H+& Pragmatique\\
-4\K & 12H+& 5-5 majeur de manche \\
+2\K &0H+& texas \C \\
+2\C &0H+& texas \P \\
+2\P &0H+& texas \T \\
+2\NT &12H+& bicolore mineur\\
+3\T &0H+& texas \K \\
+3\K &16+& texas \C de chelem\\
+3\C &16H+& texas \P de chelem\\
+3\NT &12H+& pour les jouer\\
+4\K & 12H+& 5-5 majeur \\
 }
 
 
@@ -37,11 +37,11 @@ L'ouvreur n'a pas de majeure cinquième. Le répondant va maintenant expliquer s
 {
 2\C & 10-11H & 5 cartes à \C \\
 2\P & 10-11H & 5 cartes à \P \\
-2\NT & 11HL & Proposition \\
-3\T  & 12H+ & Singleton \T \\
-3\K & 12H+ & Singleton \K \\
-3\C & 12H+ & Singleton \C \\
-3\P & 12H+ & Singleton \P \\
+2\NT & 11HL & limite \\
+3\T  & 12H+ & singleton \T \\
+3\K & 12H+ & singleton \K \\
+3\C & 12H+ & singleton \C \\
+3\P & 12H+ & singleton \P \\
 }
 
 
@@ -58,7 +58,7 @@ Avec un singleton dans une main 5-4-3-1 (ou plus rarement 5-4-4-0), le répondan
 
 
 \enchbox{1\NT -- 2\K -- 2\C}{
-2\P && 5-5 limite de manche\\
+2\P && 5-5 limite\\
 -> & 2\NT & relai\\
 ->->&& 3\T\ 5 cartes limite  \\
 ->->&& 3\K\ 5 cartes limite  \\
@@ -70,9 +70,9 @@ Avec un singleton dans une main 5-4-3-1 (ou plus rarement 5-4-4-0), le répondan
 ->->&& 3\P singleton \P \\
 3\T && 5 cartes\\
 3\K && 5 cartes\\
-3\C && 6 cartes limite de manche\\
-3\NT && Choix de manche\\
-4\C && Fin\\
+3\C && 6 cartes \\
+3\NT && choix de manche\\
+4\C && pour les jouer\\
 }
 
 
@@ -91,14 +91,14 @@ Avec un singleton dans une main 5-4-3-1 (ou plus rarement 5-4-4-0), le répondan
 
 
 \enchbox{1\NT -- 2\C -- 2\P}{
-2\NT && J'ai un singleton\\
+2\NT && singleton indéterminé\\
 -> & 3\T\ >& 3\K singleton \K \\
 \rb -> & 3\T\ >& 3\C singleton \C \\
 -> & 3\T\ >& 3\P singleton \T \\
 3\T && 5 cartes\\
 3\K && 5 cartes\\
 3\C && 5-5 de chelem\\
-3\NT && Choix de manche\\
+3\NT && choix de manche\\
 4\P && Fin\\
 
 }
@@ -111,6 +111,16 @@ Le répondant possède 6 cartes à \T ou 5 cartes et une volonté de chelem (19-
 
 L'ouvreur peut utiliser l'enchère de 2\NT avec deux gros honneurs troisièmes. Sinon il rectifie à 3\T. Le répondant nomme alors éventuellement son singleton.
 
+\enchbox{1 \NT--2\P}
+{
+2\NT & 14H & deux gros honneurs \\
+3\T  & & wait and see\\
+-> & 3\K & singleton \K \\
+-> & 3\C & singleton \C \\
+-> & 3\P & singleton \P \\
+-> & 3\NT& tentative de chelem \\
+}
+
 \newpage
 
 \titre{1\NT -- 2\NT}
@@ -120,6 +130,15 @@ Le répondant annonce alors son singleton à 3\C ou 3\P, ce qui laisse l'occasio
 
 Avec une majeure cinquième, l'ouvreur nomme sa majeure.
 
+\enchbox{1\NT -- 2\NT}
+{
+3\T && beau fit \\
+3\K && beau fit \\
+3\C && 5 cartes \\
+3\P && 5 cartes \\
+3\NT && décourageant \\
+}
+
 \newpage
 
 \titre{1\NT -- 3\T}
@@ -128,5 +147,15 @@ Avec une majeure cinquième, l'ouvreur nomme sa majeure.
 Le répondant possède 6 cartes à \K ou 5 cartes et une volonté de chelem (19-20H).
 
 L'ouvreur rectifie et le répondant annonce son singleton. 3\NT avec un singleton \T sans volonté de chelem.
+
+\enchbox{1\NT -- 3\T}
+{
+3\K  && obligatoire \\
+-> & 3\K & singleton \K \\
+-> & 3\C & singleton \C \\
+-> & 3\NT & singleton \T \\
+-> & 4\T & singleton \T chelem\\
+-> & 4\NT & quantitatif \\
+}
 
 \newpage
