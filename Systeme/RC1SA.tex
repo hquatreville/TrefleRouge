@@ -44,8 +44,108 @@ L'ouvreur n'a pas de majeure cinquième. Le répondant va maintenant expliquer s
 3\P & 12H+ & singleton \P \\
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titre{1\NT -- 2\T -- 2\C}
 
-\newpage
+La convention 2025 à 3\K permet de gérer à la fois les splinters et les demandes de contrôle. de sorte que les enchères directes de 4\T et de 4\K ne sont pas des splinters mais de petites tentatives naturelles de chelem demandant à l'ouvreur de juger de la qualité de ses honneurs.
+
+Pour des raisons de robustesse, on conserve la convention 2012. C'est toujours une tentative de chelem mais au poids. On demande à l'ouvreur de juger sa main.
+
+\enchbox{1\NT -- 2\T -- 2\C}
+{
+2\P & 10-11H & Misère dorée\\
+2\NT & 11HL & limite \\
+3\T  && 4 cartes à \P singleton indéterminé ou 5422 de chelem\\
+-> & 3\K & relai obligatoire \\
+->-> & 3\C & singleton \C \\
+->-> & 3\P & singleton \T \\
+->-> & 3\NT & singleton \K \\
+->-> & 4\T  & 5422 de chelem \\
+->-> & 4\K  & 5422 de chelem \\
+->-> & 4\C & singleton \K de chelem\\
+3\K & 17H+ & convention 2025 \\
+-> & 3\C & relai obligatoire \\
+3\C & 11H & fit limite \\
+3\P && timide tentative de chelem \\
+4\T && naturel fitté \\
+4\K && naturel fitté \\
+}
+
+\enchbox{1\NT -- 2\T -- 2\C -- 3\T -- 3\K -- 3\C}
+{
+3\P  && faible à \C \\
+->  & 3\NT & 4441 \\
+->  & 4\T & 5 cartes \\
+-> & 4\K & 5 cartes \\
+3\NT && belles cartes à \C \\
+4\T  && 5422 \\
+4\K  && 5422 \\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titre{1\NT -- 2\T -- 2\C -- 3\K -- 3\C}
+
+\enchbox{1\NT -- 2\T -- 2\C -- 3\K -- 3\C}
+{
+3\P && déclenchement des contrôles \\
+-> & 3\NT & contrôle \P \\
+3\NT && singleton \C \\
+4\T &&  singleton \T \\
+4\K &&  singleton \K \\
+}
+
+Il y a redondance ici. le singleton \C peut aussi se nommer à 4\C.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titre{1\NT -- 2\T -- 2\P}
+
+La convention 2025 à 3\K permet de gérer à la fois les splinters et les demandes de contrôle. de sorte que les enchères directes de 4\T et de 4\K ne sont pas des splinters mais de petites tentatives naturelles de chelem demandant à l'ouvreur de juger de la qualité de ses honneurs.
+
+L'enchère de 3\C est inusitée dans le contexte. On peut y voir une tentative de chelem au poids. C'est à dire un 2012 atténué.
+
+\enchbox{1\NT -- 2\T -- 2\P}
+{
+2\NT & 11HL & limite \\
+3\T  && 4 cartes à \P singleton indéterminé ou 5422 de chelem\\
+-> & 3\K & relai obligatoire \\
+->-> & 3\C & singleton \P \\
+->-> & 3\P & singleton \T \\
+->-> & 3\NT & singleton \K \\
+->-> & 4\T  & 5422 de chelem \\
+->-> & 4\K  & 5422 de chelem \\
+->-> & 4\C & singleton \K de chelem\\
+3\K & 17H+ & convention 2025 \\
+-> & 3\C & relai obligatoire \\
+3\C && timide tentative de chelem \\
+3\P & 11H & fit limite \\
+4\T && naturel fitté \\
+4\K && naturel fitté \\
+}
+
+\enchbox{1\NT -- 2\T -- 2\C -- 3\T -- 3\K -- 3\C}
+{
+3\P  && faible à \P \\
+->  & 3\NT & 4441 \\
+3\NT && belles cartes à  \P \\
+4\T  && 5422 \\
+4\T  && 5422 \\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titre{1\NT -- 2\T -- 2\P -- 3\K -- 3\C}
+
+\enchbox{1\NT -- 2\T -- 2\P -- 3\K -- 3\C}
+{
+3\P && déclenchement des contrôles \\
+-> & 3\NT & contrôle \C \\
+3\NT && singleton \P \\
+4\T &&  singleton \T \\
+4\K &&  singleton \K \\
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \titre{1\NT -- 2\K -- 2\C}
 
@@ -92,9 +192,10 @@ Avec un singleton dans une main 5-4-3-1 (ou plus rarement 5-4-4-0), le répondan
 
 \enchbox{1\NT -- 2\C -- 2\P}{
 2\NT && singleton indéterminé\\
--> & 3\T\ >& 3\K singleton \K \\
-\rb -> & 3\T\ >& 3\C singleton \C \\
--> & 3\T\ >& 3\P singleton \T \\
+-> & 3\T &relai\\
+->->& 3\K &singleton \K \\
+\rb->->& 3\C &singleton \C \\
+->->& 3\P &singleton \T \\
 3\T && 5 cartes\\
 3\K && 5 cartes\\
 3\C && 5-5 de chelem\\
@@ -174,21 +275,21 @@ La procédure d'échappement est basée sur deux principes :
  \item Le système est \textbf{symétrique}. Si le surcontre a lieu en réveil, l'ouvreur utilise les même système que si c'était son partenaire qui avait ouvert de 1\NT. \textit{Pour des raisons combinatoires, l'ouvreur ne peut pas être ni fort ni 3-3 en mineure.}
 \end{itemize}
 
-\enchbox{1\NT<\Double>}
+\enchbox{1\NT<\Double!>}
 {
 \Pass && bicolore fort ou  \\
 \rw && préférence \T ou \\
 && préférence \K \\
--> & \Redouble & pas de couleur 5\ieme \\
-\rb ->-> && 2\T  \quad  préférence \\
-\rb ->-> && 2\K  \quad   préférence \\
-\rb ->-> && 2\C  \quad  naturel forcing \\
-\rb ->-> && 2\P  \quad  naturel forcing \\
+-> & \Redouble! & pas de couleur 5\ieme \\
+\rb &->-> & 2\T  \quad  préférence \\
+\rb &->-> & 2\K  \quad   préférence \\
+\rb &->-> & 2\C  \quad  naturel forcing \\
+\rb &->-> & 2\P  \quad  naturel forcing \\
 -> & 2\T & 5+ cartes \\
 -> & 2\K & 5+ cartes \\
 -> & 2\C & 5 cartes \\
 -> & 2\P & 5 cartes \\
-\Redouble && unicolore fort ou\\
+\Redouble! && unicolore fort ou\\
 \rw && 4-4 ou 3-3 mineur \\
 \rb-> & 2\T & 4+ cartes \\
 -> & 2\K & 4+ cartes \\
@@ -202,15 +303,15 @@ La procédure d'échappement est basée sur deux principes :
 
 
 
-\enchbox{1\NT<\Pass> \Pass <\Double>}
+\enchbox{1\NT<\Pass> \Pass <\Double!>}
 {
 \Pass && 4-3 mineur\\
--> & \Redouble & pas de couleur 5\ieme \\
-\rw ->-> && 2\T  \quad  4 cartes \\
-->-> && 2\K  \quad  4 cartes \\
+-> & \Redouble! & pas de couleur 5\ieme \\
+\rw &->-> & 2\T  \quad  4 cartes \\
+&->-> & 2\K  \quad  4 cartes \\
 -> & 2\T & 5+ cartes \\
 -> & 2\K & 5+ cartes \\
-\Redouble && 4-4 mineur\\
+\Redouble! && 4-4 mineur\\
 \rb --> & 2\T & 3+ cartes \\
 \rb --> & 2\K & 3+ cartes \\
 \rb --> & 2\C & 5 cartes \\
@@ -221,10 +322,11 @@ La procédure d'échappement est basée sur deux principes :
 2\P && naturel\\
 }
 
+\end{multicols}
 \titre{Réaction aux interventions diverses}
 
 Inutile de modifier le système auquel vous êtes habitué ici.
 Le système le plus populaire, le Rubensol, est efficace quelle que soit la zone de l'ouverture de 1\NT.
 
 
-\end{multicols}
+
